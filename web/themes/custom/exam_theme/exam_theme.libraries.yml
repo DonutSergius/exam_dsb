@@ -1,0 +1,7 @@
+global:
+  css:
+    theme:
+      "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap": { external: true }
+      css/element.css: { }
+    component:
+      css/header.css: { }

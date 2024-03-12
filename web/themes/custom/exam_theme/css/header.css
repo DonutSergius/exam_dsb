@@ -1,0 +1,30 @@
+.page {
+  margin: 0 auto;
+  width: 1220px;
+}
+
+.region-primary-menu .layout__region--content {
+  display: flex;
+}
+.region-primary-menu .layout__region--content ul {
+  display: flex;
+}
+.region-primary-menu .layout__region--content ul li {
+  padding: 5px 10px;
+}
+.region-primary-menu .layout__region--content .menu--main ul li:first-child a {
+  position: absolute;
+  font-size: 20px;
+  opacity: 0;
+  width: 20px;
+  z-index: 100;
+}
+.region-primary-menu .layout__region--content .menu--main ul li:first-child img {
+  position: relative;
+  z-index: 50;
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=header.css.map */

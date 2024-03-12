@@ -1,0 +1,41 @@
+@import "variable";
+
+.page {
+  margin: 0 auto;
+  width: $desktop;
+}
+
+.region-primary-menu {
+
+  .layout__region--content {
+    ul {
+      display: flex;
+
+      li {
+        padding: 5px 10px;
+      }
+    }
+    .menu--main{
+      ul{
+        li:first-child{
+          a{
+            position: absolute;
+            font-size: 20px;
+            opacity: 0;
+            width: 20px;
+            z-index: 100;
+          }
+          img{
+            position: relative;
+            z-index: 50;
+            width: 20px;
+            height: auto;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    display: flex;
+  }
+}
