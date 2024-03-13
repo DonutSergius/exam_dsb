@@ -16,20 +16,33 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "drupal/address": "^2.0",
         "drupal/admin_toolbar": "^3.4",
         "drupal/classy": "^1.0",
         "drupal/content_entity_clone": "^1.0",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
+        "drupal/geocoder": "^4.23",
+        "drupal/geofield_map": "^3.0",
         "drupal/image_link_formatter": "^2.1",
+        "drupal/leaflet": "^10.2",
+        "drupal/leaflet_more_maps": "^2.1",
         "drupal/like": "^2.0",
         "drupal/menu_item_extras": "^2.19",
         "drupal/paragraphs": "^1.17",
         "drupal/rate": "^3.1",
         "drupal/search_api": "^1.31",
+        "drupal/simple_gmap": "^3.1",
         "drupal/social_media_links": "^2.9",
-        "drush/drush": "^11.4"
+        "drupal/webform": "^6.2",
+        "drush/drush": "^11.4",
+        "geocoder-php/arcgis-online-provider": "^4.4",
+        "geocoder-php/common-http": "^4.6",
+        "geocoder-php/geo-plugin-provider": "^4.3",
+        "geocoder-php/google-maps-provider": "^4.7",
+        "geocoder-php/nominatim-provider": "^5.7",
+        "willdurand/geocoder": "^4.6"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -42,7 +55,8 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "php-http/discovery": true
         },
         "sort-packages": true
     },

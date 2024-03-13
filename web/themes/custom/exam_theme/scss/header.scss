@@ -6,36 +6,102 @@
 }
 
 .region-primary-menu {
+  p{
+    margin-bottom: 0;
+  }
+  .layout--onecol{
+    width: 100%;
+    .layout__region--content {
+      width: max-content;
+      height: 113px;
 
-  .layout__region--content {
-    ul {
-      display: flex;
-
-      li {
-        padding: 5px 10px;
+      ul {
+        margin-bottom: 0;
+        display: flex;
+        li {
+          padding: 0 10px;
+        }
       }
-    }
-    .menu--main{
-      ul{
-        li:first-child{
-          a{
-            position: absolute;
-            font-size: 20px;
-            opacity: 0;
-            width: 20px;
-            z-index: 100;
+      .block-inline-blocktitle-block{
+        background-color: $footerColor;
+        width: 234px;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        height: 113px;
+        & > div{
+          font-size: 12px;
+          width: 100%;
+          height: max-content;
+        }
+        div:first-child{
+          color: $titleColor;
+          font-weight: 500;
+          font-size: 26px;
+          margin-top: auto;
+        }
+        & > div:after{
+          content: none;
+        }
+      }
+
+
+      .menu--main{
+
+        .layout--onecol{
+          height: auto;
+        }
+        ul{
+          li:first-child{
+            align-items: center;
+            a{
+              position: absolute;
+              font-size: 20px;
+              opacity: 0;
+              width: 28px;
+              z-index: 100;
+            }
+            img{
+              position: relative;
+              z-index: 50;
+              width: 28px;
+              margin-top: -20px;
+              height: auto;
+              cursor: pointer;
+            }
+            .layout__region--content{
+              height: auto;
+              & > div {
+                height: auto;
+              }
+            }
           }
-          img{
-            position: relative;
-            z-index: 50;
-            width: 20px;
-            height: auto;
-            cursor: pointer;
+          li{
+            display: flex;
+            align-items: center;
+            a{
+              color: black;
+            }
+            height: 113px;
+            .menu-link-contentmain{
+              height: 0;
+              .layout--onecol{
+                height: 0 ;
+                .layout__region--content{
+                  margin: 0;
+                }
+              }
+            }
+            &:hover{
+              border-bottom: 14px solid $titleColor;
+            }
           }
         }
       }
+      align-items: center;
+      margin: 0 auto;
+      display: flex;
     }
-
-    display: flex;
   }
 }
