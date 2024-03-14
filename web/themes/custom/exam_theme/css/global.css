@@ -1,0 +1,16 @@
+.page {
+  margin: 0 auto;
+  width: 1220px;
+}
+
+.social-media-links--platforms li a {
+  color: #6E9BCA;
+}
+.social-media-links--platforms li a:hover {
+  color: #0a6eb4;
+}
+.social-media-links--platforms li a span {
+  font-size: 27px;
+}
+
+/*# sourceMappingURL=global.css.map */

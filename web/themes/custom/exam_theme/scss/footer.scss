@@ -1,0 +1,36 @@
+@import "variable";
+
+footer {
+  margin-top: 20px;
+  width: 100%;
+  background-color: $footerColor;
+
+  .region-footer {
+    margin: 0 auto;
+    width: 1280px;
+
+    .layout--twocol-section {
+      height: 196px;
+      align-items: center;
+
+      .layout__region {
+        &--first{
+          p{ margin-bottom: 0; }
+          .field--name-field-title{
+            color: $titleColor;
+            font-weight: 500;
+            font-size: 28px;
+          }
+          .field--name-body{
+            font-size: 12px;
+            height: max-content;
+            color: white;
+          }
+        }
+        &--second {
+          text-align: right;
+        }
+      }
+    }
+  }
+}

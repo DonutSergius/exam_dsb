@@ -1,6 +1,7 @@
 body, html{
   padding: 0;
   margin: 0;
+  height:100%;
   font-family: "Inter", sans-serif;
 }
 
@@ -19,4 +20,14 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
 
 a{
   text-decoration: none;
+}
+
+.dialog-off-canvas-main-canvas{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page{
+  flex: 1 1 auto;
 }

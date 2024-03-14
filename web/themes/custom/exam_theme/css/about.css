@@ -1,0 +1,42 @@
+.block-views-blockabout-block-block-1 .contextual-region .view-content {
+  display: flex;
+  align-items: center;
+  height: 260px;
+}
+.block-views-blockabout-block-block-1 .contextual-region .view-content .views-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 15px 0;
+  border-top: 5px solid #373645;
+  border-bottom: 5px solid #6E9BCA;
+}
+.block-views-blockabout-block-block-1 .contextual-region .view-content .views-row .views-field-title {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+.block-views-blockabout-block-block-1 .contextual-region .view-content .views-row .views-field-title a {
+  color: black;
+  font-weight: bold;
+}
+.block-views-blockabout-block-block-1 .contextual-region .view-content .views-row .views-field-body {
+  font-size: 20px;
+  color: gray;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.5px;
+}
+.block-views-blockabout-block-block-1 .contextual-region .view-content .views-row .views-field-view-node {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.block-views-blockabout-block-block-1 .contextual-region .view-content .views-row .views-field-view-node a {
+  color: white;
+  background-color: #6E9BCA;
+  padding: 8px 10px;
+}
+
+/*# sourceMappingURL=about.css.map */

@@ -5,3 +5,7 @@ global:
       css/element.css: { }
     component:
       css/header.css: { }
+      css/global.css: { }
+      css/footer.css: { }
+      css/baner.css: { }
+      css/about.css: { }

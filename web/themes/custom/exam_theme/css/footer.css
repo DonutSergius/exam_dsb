@@ -1,0 +1,31 @@
+footer {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #373645;
+}
+footer .region-footer {
+  margin: 0 auto;
+  width: 1280px;
+}
+footer .region-footer .layout--twocol-section {
+  height: 196px;
+  align-items: center;
+}
+footer .region-footer .layout--twocol-section .layout__region--first p {
+  margin-bottom: 0;
+}
+footer .region-footer .layout--twocol-section .layout__region--first .field--name-field-title {
+  color: #6E9BCA;
+  font-weight: 500;
+  font-size: 28px;
+}
+footer .region-footer .layout--twocol-section .layout__region--first .field--name-body {
+  font-size: 12px;
+  height: max-content;
+  color: white;
+}
+footer .region-footer .layout--twocol-section .layout__region--second {
+  text-align: right;
+}
+
+/*# sourceMappingURL=footer.css.map */

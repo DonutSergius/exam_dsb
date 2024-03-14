@@ -1,0 +1,47 @@
+@import "variable";
+@import "mixin";
+
+.block-views-blockabout-block-block-1{
+  .contextual-region{
+    .view-content{
+      @include centerElem;
+      height: 260px;
+        .views-row{
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          text-transform: uppercase;
+          padding: 15px 0;
+          border-top:5px solid $footerColor ;
+          border-bottom:5px solid $titleColor ;
+          .views-field{
+            &-title{
+              @include centerElem;
+              font-size: 30px;
+              a{
+                color: black;
+                font-weight: bold;
+              }
+            }
+
+            &-body{
+              font-size: 20px;
+              color: gray;
+              @include centerElem;
+              letter-spacing: -0.5px;
+            }
+
+            &-view-node{
+              @include centerElem;
+              font-size: 14px;
+              a{
+                color: white;
+                background-color: $titleColor;
+                padding: 8px 10px;
+              }
+            }
+          }
+        }
+    }
+  }
+}
