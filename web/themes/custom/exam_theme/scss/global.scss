@@ -1,19 +1,58 @@
 @import "variable";
+@import "mixin";
 
-.page {
+
+.view-content {
   margin: 0 auto;
   width: $desktop;
 }
 
-.social-media-links--platforms{
-  li{
-    a{
+.social-media-links--platforms {
+  li {
+    a {
       color: $titleColor;
-      &:hover{
+
+      &:hover {
         color: #0a6eb4;
       }
-      span{
+
+      span {
         font-size: 27px;
+      }
+    }
+  }
+}
+
+.views-field {
+  &-view-node {
+    @include centerElem;
+    font-size: 14px;
+
+    .field-content {
+      margin: 0 auto;
+      background-color: $titleColor;
+      padding: 8px 10px;
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.pager {
+  ul {
+    li {
+      font-size: 14px;
+
+      &.is-active {
+        background-color: $gray;
+        border-radius: 50px;
+        padding: 8px 12px;
+      }
+
+      a {
+        color: $footerColor;
       }
     }
   }

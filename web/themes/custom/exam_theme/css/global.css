@@ -1,4 +1,4 @@
-.page {
+.view-content {
   margin: 0 auto;
   width: 1220px;
 }
@@ -11,6 +11,32 @@
 }
 .social-media-links--platforms li a span {
   font-size: 27px;
+}
+
+.views-field-view-node {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.views-field-view-node .field-content {
+  margin: 0 auto;
+  background-color: #6E9BCA;
+  padding: 8px 10px;
+}
+.views-field-view-node .field-content a {
+  color: white;
+}
+
+.pager ul li {
+  font-size: 14px;
+}
+.pager ul li.is-active {
+  background-color: #D5D5D5;
+  border-radius: 50px;
+  padding: 8px 12px;
+}
+.pager ul li a {
+  color: #373645;
 }
 
 /*# sourceMappingURL=global.css.map */

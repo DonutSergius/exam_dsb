@@ -12,6 +12,18 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "kenwheeler/slick",
+                "version": "1.8.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/kenwheeler/slick/archive/refs/tags/1.8.0.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -34,6 +46,8 @@
         "drupal/rate": "^3.1",
         "drupal/search_api": "^1.31",
         "drupal/simple_gmap": "^3.1",
+        "drupal/slick": "^2.10",
+        "drupal/slick_views": "^2.8",
         "drupal/social_media_links": "^2.9",
         "drupal/webform": "^6.2",
         "drush/drush": "^11.4",
@@ -42,6 +56,7 @@
         "geocoder-php/geo-plugin-provider": "^4.3",
         "geocoder-php/google-maps-provider": "^4.7",
         "geocoder-php/nominatim-provider": "^5.7",
+        "kenwheeler/slick": "^1.8",
         "willdurand/geocoder": "^4.6"
     },
     "conflict": {

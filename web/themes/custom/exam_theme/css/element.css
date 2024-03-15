@@ -21,6 +21,18 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
 a {
   text-decoration: none;
 }
+a[href="/taxonomy/term/1"] {
+  color: #53CCB3;
+}
+a[href="/taxonomy/term/2"] {
+  color: #A264BA;
+}
+a[href="/taxonomy/term/3"] {
+  color: #EB6356;
+}
+a[href="/taxonomy/term/4"] {
+  color: #50B9E6;
+}
 
 .dialog-off-canvas-main-canvas {
   min-height: 100%;
@@ -30,6 +42,31 @@ a {
 
 .page {
   flex: 1 1 auto;
+}
+
+.like {
+  font-size: 18px;
+  color: #D5D5D5;
+}
+.like:before {
+  font-family: FontAwesome;
+  content: "\f08a";
+}
+.like:hover {
+  cursor: pointer;
+  color: red;
+}
+.like:hover:before {
+  content: "\f004";
+}
+
+.grid-view-2-col .view-content {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-view-2-col .view-content .field--name-title {
+  text-align: center;
 }
 
 /*# sourceMappingURL=element.css.map */

@@ -9,3 +9,9 @@ global:
       css/footer.css: { }
       css/baner.css: { }
       css/about.css: { }
+      css/home_page.css: { }
+      css/services.css: { }
+      css/projects.css: { }
+      css/team.css: { }
+      css/clients.css: { }
+      css/news.css: { }

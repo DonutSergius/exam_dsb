@@ -1,0 +1,35 @@
+@import "variable";
+@import "mixin";
+
+.block-views-block {
+  &clients-block-block-1, &clients-block-block-2 {
+    h2 {
+      font-size: $font_page_title;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      white-space: nowrap;
+      position: relative;
+      margin-bottom: 75px;
+
+      &:before, &:after {
+        content: "";
+        position: relative;
+        top: 50%;
+        width: calc(($desktop / 2) - 67px);
+        height: 1px;
+        background-color: $gray;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      &:before {
+        margin-right: 20px;
+      }
+
+      &:after {
+        margin-left: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import "variable";
+@import "mixin";
+
+.block-block-content65b91244-6455-4a94-8e27-1338d079e2ce{
+  h2 {
+    font-size: $font_page_title;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    font-weight: bold;
+    letter-spacing: -2px;
+
+    &:before, &:after {
+      content: "";
+      position: relative;
+      top: 50%;
+      width: calc(($desktop / 2) - 50px);
+      height: 1px;
+      background-color: $gray;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:before {
+      margin-right: 20px;
+    }
+
+    &:after {
+      margin-left: 20px;
+    }
+    margin-bottom: 50px;
+  }
+
+  .layout__region--content{
+    background: repeating-linear-gradient(-45deg, #fff, #fff, 9px, #D5D5D5 10px, #D5D5D5 1px);
+    .block-search{
+      margin: 0 auto;
+      width: $desktop;
+      padding: 20px 0;
+      form{
+        border-radius: 5px;
+        padding: 5px;
+        width: max-content;
+        background-color: $gray;
+
+        input{
+          &.form-search {
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 5px 10px;
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}

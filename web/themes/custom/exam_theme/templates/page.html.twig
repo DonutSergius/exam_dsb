@@ -1,9 +1,8 @@
 <header role="banner">
   {{ page.header }}
+  {{ page.primary_menu }}
 </header>
 <div class="page">
-
-  {{ page.primary_menu }}
 
 
   <div class="main-content">
@@ -16,12 +15,6 @@
       </div>{# /.layout-content #}
 
     </main>
-
-    {% if page.sidebar %}
-      <aside class="sidebar" role="complementary">
-        {{ page.sidebar }}
-      </aside>
-    {% endif %}
   </div>
 
 </div>{# /.layout-container #}

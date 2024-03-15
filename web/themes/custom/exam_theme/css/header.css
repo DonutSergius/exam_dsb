@@ -68,8 +68,8 @@ header .layout--onecol .layout__region--content .menu--main ul li:first-child {
 header .layout--onecol .layout__region--content .menu--main ul li:first-child a {
   position: absolute;
   font-size: 20px;
-  opacity: 0;
   width: 28px;
+  opacity: 0;
   z-index: 100;
   letter-spacing: -10px;
 }
@@ -77,14 +77,11 @@ header .layout--onecol .layout__region--content .menu--main ul li:first-child im
   position: relative;
   z-index: 50;
   width: 28px;
-  margin-top: -20px;
+  margin-top: -7px;
   height: auto;
   cursor: pointer;
 }
-header .layout--onecol .layout__region--content .menu--main ul li:first-child:hover a {
-  margin-top: 14px;
-}
-header .layout--onecol .layout__region--content .menu--main ul li:first-child:hover .layout--onecol {
+header .layout--onecol .layout__region--content .menu--main ul li:first-child:hover img {
   margin-top: 7px;
 }
 header .layout--onecol .layout__region--content .menu--main ul li:first-child .layout__region--content {
@@ -102,15 +99,6 @@ header .layout--onecol .layout__region--content .menu--main ul li {
 header .layout--onecol .layout__region--content .menu--main ul li a {
   font-size: 14px;
   color: black;
-}
-header .layout--onecol .layout__region--content .menu--main ul li .menu-link-contentmain {
-  height: 0;
-}
-header .layout--onecol .layout__region--content .menu--main ul li .menu-link-contentmain .layout--onecol {
-  height: 0;
-}
-header .layout--onecol .layout__region--content .menu--main ul li .menu-link-contentmain .layout--onecol .layout__region--content {
-  margin: 0;
 }
 header .layout--onecol .layout__region--content .menu--main ul li:hover {
   border-bottom: 14px solid #6E9BCA;

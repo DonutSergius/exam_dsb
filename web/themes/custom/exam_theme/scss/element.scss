@@ -1,11 +1,13 @@
-body, html{
+@import "variable";
+
+body, html {
   padding: 0;
   margin: 0;
-  height:100%;
+  height: 100%;
   font-family: "Inter", sans-serif;
 }
 
-body{
+body {
   width: 100%;
   overflow-y: scroll;
 }
@@ -18,16 +20,59 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
   margin-top: 0;
 }
 
-a{
+a {
+  &[href="/taxonomy/term/1"] {
+    color: $color_web;
+  }
+
+  &[href="/taxonomy/term/2"] {
+    color: $color_php;
+  }
+
+  &[href="/taxonomy/term/3"] {
+    color: $color_app;
+  }
+
+  &[href="/taxonomy/term/4"] {
+    color: $color_drupal;
+  }
+
   text-decoration: none;
 }
 
-.dialog-off-canvas-main-canvas{
+.dialog-off-canvas-main-canvas {
   min-height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.page{
+.page {
   flex: 1 1 auto;
+}
+
+.like{
+  font-size: 18px;
+  color: $gray;
+  &:before{
+    font-family: FontAwesome;
+    content: "\f08a";
+  }
+  &:hover{
+    cursor: pointer;
+    color: red;
+    &:before{
+      content: "\f004";
+    }
+  }
+}
+
+.grid-view-2-col{
+  .view-content{
+    .field--name-title{
+      text-align: center;
+    }
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

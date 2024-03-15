@@ -1,8 +1,8 @@
 @import "variable";
 
-.path-frontpage{
-  header{
-    #block-exam-theme-menunavigation{
+.path-frontpage {
+  header {
+    #block-exam-theme-menunavigation {
       position: absolute;
       top: 109px;
       width: 100%;
@@ -12,28 +12,34 @@
 }
 
 header {
-  p{
+  p {
     margin-bottom: 0;
   }
-    #block-exam-theme-menunavigation{
-      width: 100%;
-    }
-  .layout--onecol{
+
+  #block-exam-theme-menunavigation {
+    width: 100%;
+  }
+
+  .layout--onecol {
     background-color: $white;
     margin: 0 auto;
     width: $desktop;
+
     .layout__region--content {
       height: 109px;
-      .layout--onecol{
+
+      .layout--onecol {
         width: auto;
       }
+
       ul {
         margin-bottom: 0;
         margin-left: 0;
         display: flex;
       }
+
       //===Name compane====
-      .block-inline-blocktitle-block{
+      .block-inline-blocktitle-block {
         background-color: $footerColor;
         width: 234px;
         color: $white;
@@ -41,112 +47,121 @@ header {
         flex-wrap: wrap;
         text-align: center;
         height: 109px;
-        & > div{
+
+        & > div {
           font-size: 12px;
           width: 100%;
           height: max-content;
         }
-        div:first-child{
+
+        div:first-child {
           color: $titleColor;
           font-weight: 500;
           font-size: 26px;
           margin-top: auto;
         }
-        & > div:after{
+
+        & > div:after {
           content: none;
         }
       }
+
       //=== Menu ====
-      .menu--main{
+      .menu--main {
         width: max-content;
-        .layout--onecol{
+
+        .layout--onecol {
           height: auto;
         }
-        ul{
+
+        ul {
           text-transform: uppercase;
-          li:first-child{
+          // == bag ==
+          li:first-child {
             align-items: center;
-            a{
+
+            a {
               position: absolute;
               font-size: 20px;
-              opacity: 0;
               width: 28px;
+              opacity: 0;
               z-index: 100;
               letter-spacing: -10px;
             }
-            img{
+
+            img {
               position: relative;
               z-index: 50;
               width: 28px;
-              margin-top: -20px;
+              margin-top: -7px;
               height: auto;
               cursor: pointer;
             }
 
-            &:hover{
-              a{
-                margin-top: 14px;
-              }
-              .layout--onecol{
+
+            &:hover {
+              img {
                 margin-top: 7px;
               }
             }
 
-            .layout__region--content{
+            .layout__region--content {
               height: auto;
+
               & > div {
                 height: auto;
               }
             }
           }
-          li{
+
+          li {
             margin: 0 10px;
             display: flex;
             align-items: center;
-            a{
+
+            a {
               font-size: 14px;
               color: black;
             }
+
             height: 109px;
-            .menu-link-contentmain{
-              height: 0;
-              .layout--onecol{
-                height: 0 ;
-                .layout__region--content{
-                  margin: 0;
-                }
-              }
-            }
-            &:hover{
-              a{
+
+            &:hover {
+              a {
                 margin-top: 14px;
               }
+
               border-bottom: 14px solid $titleColor;
             }
           }
         }
       }
+
       //=== Social link ===
-      .social-media-links--platforms{
+      .social-media-links--platforms {
         width: 133px;
         justify-content: center;
       }
+
       //=== Search field ===
-      .search-block-form{
+      .search-block-form {
         margin-right: 25px;
-        input{
-          &[type="search"]{
+
+        input {
+          &[type="search"] {
             box-sizing: border-box;
           }
-          &.form-search{
+
+          &.form-search {
             border: 1px solid gray;
             width: 169px;
             height: 38px;
           }
 
         }
-        input{
-          &.form-submit{
+
+        input {
+          &.form-submit {
             width: 38px;
             height: 38px;
             text-indent: -9999px;

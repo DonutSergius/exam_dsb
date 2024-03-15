@@ -1,0 +1,69 @@
+.block-views-blockprojects-block-block-1, .block-views-blockprojects-block-block-2 {
+  margin-bottom: 75px;
+}
+.block-views-blockprojects-block-block-1 h2, .block-views-blockprojects-block-block-2 h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: -2px;
+}
+.block-views-blockprojects-block-block-1 h2:before, .block-views-blockprojects-block-block-1 h2:after, .block-views-blockprojects-block-block-2 h2:before, .block-views-blockprojects-block-block-2 h2:after {
+  content: "";
+  position: relative;
+  top: 50%;
+  width: 554px;
+  height: 1px;
+  background-color: #D5D5D5;
+  display: inline-block;
+  vertical-align: middle;
+}
+.block-views-blockprojects-block-block-1 h2:before, .block-views-blockprojects-block-block-2 h2:before {
+  margin-right: 2px;
+}
+.block-views-blockprojects-block-block-1 h2:after, .block-views-blockprojects-block-block-2 h2:after {
+  margin-left: 2px;
+}
+.block-views-blockprojects-block-block-1 .view-content, .block-views-blockprojects-block-block-2 .view-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.block-views-blockprojects-block-block-1 .view-content .views-row, .block-views-blockprojects-block-block-2 .view-content .views-row {
+  text-align: center;
+  max-width: 25%;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.block-views-blockprojects-block-block-1 .view-content .views-row:first-child, .block-views-blockprojects-block-block-2 .view-content .views-row:first-child {
+  margin-left: 0;
+}
+.block-views-blockprojects-block-block-1 .view-content .views-row:last-child, .block-views-blockprojects-block-block-2 .view-content .views-row:last-child {
+  margin-right: 0;
+}
+.block-views-blockprojects-block-block-1 .view-content .views-row .views-field, .block-views-blockprojects-block-block-2 .view-content .views-row .views-field {
+  text-transform: uppercase;
+}
+.block-views-blockprojects-block-block-1 .view-content .views-row .views-field-field-images, .block-views-blockprojects-block-block-2 .view-content .views-row .views-field-field-images {
+  margin-bottom: 30px;
+}
+.block-views-blockprojects-block-block-1 .view-content .views-row .views-field-title, .block-views-blockprojects-block-block-2 .view-content .views-row .views-field-title {
+  margin-bottom: 10px;
+}
+.block-views-blockprojects-block-block-1 .view-content .views-row .views-field-title a, .block-views-blockprojects-block-block-2 .view-content .views-row .views-field-title a {
+  color: black;
+}
+.block-views-blockprojects-block-block-1 .view-content .views-row .views-field-field-service-term, .block-views-blockprojects-block-block-2 .view-content .views-row .views-field-field-service-term {
+  margin-bottom: 10px;
+}
+.block-views-blockprojects-block-block-1 .view-content .views-row .views-field-view-node, .block-views-blockprojects-block-block-2 .view-content .views-row .views-field-view-node {
+  margin-bottom: 10px;
+}
+.block-views-blockprojects-block-block-1 .view-content .views-row .views-field-view-node .field-content, .block-views-blockprojects-block-block-2 .view-content .views-row .views-field-view-node .field-content {
+  background-color: #373645;
+}
+
+/*# sourceMappingURL=projects.css.map */
