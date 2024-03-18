@@ -1,56 +1,313 @@
 @import "variable";
 @import "mixin";
 
-.block-block-content65b91244-6455-4a94-8e27-1338d079e2ce{
-  h2 {
-    font-size: $font_page_title;
-    text-transform: uppercase;
-    text-align: center;
-    white-space: nowrap;
-    position: relative;
-    font-weight: bold;
-    letter-spacing: -2px;
+.block-views-block {
+  &news-block-block-1, &news-block-block-2 {
+    h2 {
+      @include textFormat($font_page_title, bold, black);
 
-    &:before, &:after {
-      content: "";
+      text-transform: uppercase;
+      text-align: center;
+      white-space: nowrap;
       position: relative;
-      top: 50%;
-      width: calc(($desktop / 2) - 50px);
-      height: 1px;
-      background-color: $gray;
-      display: inline-block;
-      vertical-align: middle;
-    }
+      letter-spacing: -2px;
 
-    &:before {
-      margin-right: 20px;
-    }
-
-    &:after {
-      margin-left: 20px;
-    }
-    margin-bottom: 50px;
-  }
-
-  .layout__region--content{
-    background: repeating-linear-gradient(-45deg, #fff, #fff, 9px, #D5D5D5 10px, #D5D5D5 1px);
-    .block-search{
-      margin: 0 auto;
-      width: $desktop;
-      padding: 20px 0;
-      form{
-        border-radius: 5px;
-        padding: 5px;
-        width: max-content;
+      &:before, &:after {
+        content: "";
+        position: relative;
+        top: 50%;
+        width: calc(($desktop / 2) - 50px);
+        height: 1px;
         background-color: $gray;
+        display: inline-block;
+        vertical-align: middle;
+      }
 
-        input{
-          &.form-search {
-            border: 1px solid gray;
-            border-radius: 5px;
-            padding: 5px 10px;
-            width: 300px;
+      &:before {
+        margin-right: 20px;
+      }
+
+      &:after {
+        margin-left: 20px;
+      }
+
+      margin-bottom: 50px;
+    }
+
+    .view-news-block {
+      .view-filters {
+        width: $desktop;
+        margin: 0 auto 0 auto;
+        padding-top: 20px;
+
+        form {
+          width: max-content;
+          background-color: #f5f5f5;
+          padding: 10px 5px;
+          border-radius: 5px;
+
+          .form--inline {
+            display: flex;
+
+            .form-type-textfield {
+              margin: 0;
+
+              label {
+                display: none;
+              }
+
+              .form-text {
+                @include textFormat(16px, 400, $gray);
+                padding: 0 10px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                width: 300px;
+                height: 30px;
+                margin-right: 5px;
+              }
+            }
+
+            .form-wrapper {
+              margin: 0;
+
+              .form-submit {
+                @include textFormat(16px, 400, $white);
+                height: 30px;
+                color: $white;
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: 1px solid $color_drupal;
+                background-color: $color_drupal;
+              }
+            }
           }
+        }
+      }
+
+      .view-content {
+        margin-top: 20px;
+        padding-bottom: 80px;
+        margin-bottom: 40px;
+
+        .views-row {
+          background-color: white;
+          display: flex;
+          flex-wrap: wrap;
+          text-transform: uppercase;
+          padding: 20px 20px 20px 10px;
+
+          .views-field {
+            height: max-content;
+
+            &-field-date-create {
+              p {
+                margin: 0;
+                text-align: center;
+
+                &:first-child {
+                  font-size: 22px;
+                  line-height: 22px;
+                  @include textFormat(22px, 400, black);
+                }
+
+                &:nth-child(2) {
+                  line-height: 38px;
+                  @include textFormat(38px, bold, $color_drupal);
+                }
+
+                &:last-child {
+                  line-height: 14px;
+                  @include textFormat(14px, 400, $gray);
+                }
+              }
+            }
+
+
+            &-field-date-create {
+              width: 75px;
+            }
+
+            &-field-team-image {
+              padding-left: 20px;
+              padding-right: 10px;
+              border-left: 1px solid $gray;
+            }
+
+            &-field-name {
+              font-size: $fontS;
+
+              &:before {
+                content: "writer ";
+                color: $gray;
+              }
+
+              &:after {
+                content: " / ";
+              }
+            }
+
+            &-field-position {
+              @include textFormat($fontS, 400, $color_drupal);
+            }
+
+            &-field-date-create-1 {
+              margin-left: auto;
+              @include textFormat($fontS, 400, $gray);
+            }
+
+            &-title-1 {
+              padding-left: 20px;
+              border-left: 1px solid $gray;
+              margin-top: 20px;
+              margin-left: 75px;
+              width: 100%;
+
+              a {
+                @include textFormat($font_page_title, 400, black);
+              }
+            }
+
+            &-body {
+              padding-left: 20px;
+              @include textFormat(12px, 400, black);
+              border-left: 1px solid $gray;
+              margin-left: 75px;
+              width: 100%;
+              text-align: justify;
+              letter-spacing: -1px;
+            }
+
+            &-view-node {
+              padding-left: 20px;
+              border-left: 1px solid $gray;
+              width: 100%;
+              padding-top: 10px;
+              margin-left: 75px;
+
+              .field-content {
+                margin-left: auto;
+                margin-right: 0;
+                background-color: $footerColor
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .block-views-block {
+    &news-block-block-1, &news-block-block-2 {
+
+      h2{
+        &:before, &:after {
+          width: calc(($smallDesktop / 2) - 52px);
+        }
+      }
+
+      .grid-view-2-col{
+        .view-content{
+          .field--name-title{
+            text-align: center;
+          }
+          display: grid;
+          grid-gap: 20px;
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+      .view-news-block{
+        .view-filters{
+          width: $smallDesktop;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $smallDesktop) {
+  .block-views-block {
+    &news-block-block-1, &news-block-block-2 {
+
+      h2{
+        margin-bottom: 20px;
+        &:before, &:after {
+          width: calc(($table / 2) - 52px);
+        }
+      }
+
+      .view-news-block{
+        .view-filters{
+          width: $table;
+        }
+      }
+      .view-content{
+        .views-row{
+          .views-field{
+            &-title-1{
+              font-size: 20px;
+            }
+            &-body{
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $table) {
+  .block-views-block {
+    &news-block-block-1, &news-block-block-2 {
+
+      h2 {
+        margin-bottom: 10px;
+
+        &:before, &:after {
+          width: calc(($phone / 2) - 52px);
+        }
+      }
+
+      .view-news-block {
+        .view-filters {
+          width: $phone;
+
+          form {
+            width: 100%;
+
+            .form--inline {
+              .form-type-textfield {
+                .form-text {
+                  width: 220px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .view-news-block {
+        .view-content {
+          .views-row {
+            padding: 10px;
+            .views-field {
+
+              &-field-name{
+                margin-top: 10px;
+                width: 100%;
+              }
+
+              &-title-1, &-body, &-view-node {
+                border: none;
+                margin-left: 0;
+                padding-left: 0;
+              }
+            }
+          }
+          padding-bottom: 30px;
+          margin-bottom: 20px;
         }
       }
     }

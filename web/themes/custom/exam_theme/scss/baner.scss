@@ -1,38 +1,116 @@
 @import "variable";
+@import "mixin";
 
-header{
+header {
   width: 100%;
-  #block-exam-theme-baner{
+
+  #block-exam-theme-baner {
     margin: 0 auto;
     position: relative;
     z-index: 100;
     width: 100%;
-    .field--name-body{
-      position: absolute;
-      z-index: 300;
-      top: 43%;
-      left: 25%;
-      margin: 0 auto;
-      & > p{
-        width: 360px;
-        text-align: justify;
+
+    .field--name {
+      &-body {
+        position: absolute;
+        z-index: 300;
+        top: 43%;
+        left: 25%;
+        margin: 0 auto;
+
+        & > p {
+          width: 360px;
+          text-align: justify;
+        }
+
+        p:first-child {
+          @include textFormat(62px, 400, white);
+          line-height: 62px;
+        }
+
+        p:nth-child(2) {
+          @include textFormat(36px, 400, black);
+          line-height: 36px;
+          letter-spacing: 1.5px;
+        }
+
+        p:last-child {
+          @include textFormat(14px, 400, $titleColor);
+          line-height: 14px;
+          letter-spacing: -0.5px;
+        }
       }
-      p:first-child{
-        font-size: 62px;
-        color: $white;
-        line-height: 62px;
+
+      &-field-title-image {
+        img{
+          width: 100%;
+          height: auto;
+        }
       }
-      p:nth-child(2){
-        font-size: 36px;
-        color: black;
-        line-height: 36px;
-        letter-spacing: 1.5px;
+    }
+  }
+}
+
+
+@media (max-width: $desktop) {
+  header{
+    #block-exam-theme-baner{
+      .field--name{
+        &-body{
+          top: 40%;
+          left: 15%;
+
+          & > p{
+            width: 230px;
+          }
+
+          p:first-child{
+            @include textFormat(40px, 400, white);
+            line-height: 40px;
+          }
+          P:nth-child(2){
+            @include textFormat(24px, 400, black);
+            line-height: 24px;
+            letter-spacing: 0.5px;
+          }
+          p:last-child{
+            @include textFormat(12px, 400, $titleColor);
+            line-height: 12px;
+            letter-spacing: -0.5px;
+          }
+        }
       }
-      p:last-child{
-        font-size: 14px;
-        line-height: 14px;
-        color: $titleColor;
-        letter-spacing: -0.5px;
+    }
+  }
+}
+
+@media(max-width: $smallDesktop){
+  header{
+    #block-exam-theme-baner{
+      .field--name{
+        &-body{
+          top: 35%;
+          left: 10%;
+
+          & > p{
+            width: 185px;
+          }
+
+          p:first-child{
+            @include textFormat(30px, 400, white);
+            line-height: 30px;
+          }
+          P:nth-child(2){
+            @include textFormat(20px, 400, black);
+            line-height: 20px;
+            letter-spacing: 0;
+          }
+          p:last-child{
+            @include textFormat(10px, 400, $titleColor);
+            line-height: 10px;
+            letter-spacing: -0.5px;
+          }
+        }
       }
     }
   }

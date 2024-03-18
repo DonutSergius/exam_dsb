@@ -2,3 +2,9 @@
   display: flex;
   align-items: center;
 }
+
+@mixin textFormat ($font_size, $font_weight, $font_color){
+  font-size: $font_size;
+  font-weight: $font_weight;
+  color: $font_color;
+}

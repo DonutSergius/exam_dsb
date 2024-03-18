@@ -6,6 +6,7 @@ base theme: classy
 
 libraries:
   - exam_theme/global
+  - exam_theme/js
 
 regions:
   header: Header

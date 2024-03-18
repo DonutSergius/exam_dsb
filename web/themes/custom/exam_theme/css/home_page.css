@@ -10,5 +10,14 @@
 .block-views-blockprojects-block-block-1 .view-projects-block .view-content .views-row {
   border-bottom: 1px solid #373645;
 }
+@media (max-width: 1220px) {
+  .block-views-blockprojects-block-block-1 .view-projects-block {
+    padding-bottom: 50px;
+  }
+}
+.block-views-blocknews-block-block-1 .view-news-block {
+  background: repeating-linear-gradient(-45deg, #fff, #fff, 9px, #D5D5D5 10px, #D5D5D5 1px);
+  width: 100%;
+}
 
 /*# sourceMappingURL=home_page.css.map */

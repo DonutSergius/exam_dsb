@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .path-frontpage header #block-exam-theme-menunavigation {
   position: absolute;
   top: 109px;
@@ -40,14 +41,17 @@ header .layout--onecol .layout__region--content .block-inline-blocktitle-block {
   height: 109px;
 }
 header .layout--onecol .layout__region--content .block-inline-blocktitle-block > div {
+  padding: 0 15px;
   font-size: 12px;
+  font-weight: 400;
+  color: white;
   width: 100%;
   height: max-content;
 }
 header .layout--onecol .layout__region--content .block-inline-blocktitle-block div:first-child {
-  color: #6E9BCA;
-  font-weight: 500;
   font-size: 26px;
+  font-weight: 500;
+  color: #6E9BCA;
   margin-top: auto;
 }
 header .layout--onecol .layout__region--content .block-inline-blocktitle-block > div:after {
@@ -68,6 +72,8 @@ header .layout--onecol .layout__region--content .menu--main ul li:first-child {
 header .layout--onecol .layout__region--content .menu--main ul li:first-child a {
   position: absolute;
   font-size: 20px;
+  font-weight: 400;
+  color: black;
   width: 28px;
   opacity: 0;
   z-index: 100;
@@ -98,6 +104,7 @@ header .layout--onecol .layout__region--content .menu--main ul li {
 }
 header .layout--onecol .layout__region--content .menu--main ul li a {
   font-size: 14px;
+  font-weight: 400;
   color: black;
 }
 header .layout--onecol .layout__region--content .menu--main ul li:hover {
@@ -118,7 +125,7 @@ header .layout--onecol .layout__region--content .search-block-form input[type=se
 }
 header .layout--onecol .layout__region--content .search-block-form input.form-search {
   border: 1px solid gray;
-  width: 169px;
+  max-width: 169px;
   height: 38px;
 }
 header .layout--onecol .layout__region--content .search-block-form input.form-submit {
@@ -131,6 +138,154 @@ header .layout--onecol .layout__region--content .search-block-form input.form-su
   background-repeat: no-repeat;
   background-position: center;
   margin-left: -6px;
+}
+
+@media (max-width: 1220px) {
+  .path-frontpage header #block-exam-theme-menunavigation {
+    top: 79px;
+  }
+  header .layout--onecol {
+    width: 900px;
+  }
+  header .layout--onecol .layout__region--content {
+    height: 70px;
+  }
+  header .layout--onecol .layout__region--content .block-inline-blocktitle-block {
+    width: min-content;
+    height: 70px;
+  }
+  header .layout--onecol .layout__region--content .block-inline-blocktitle-block > div {
+    text-align: center;
+    width: max-content;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+  }
+  header .layout--onecol .layout__region--content .block-inline-blocktitle-block div:first-child {
+    font-size: 28px;
+    font-weight: 500;
+    color: #6E9BCA;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul li:first-child img {
+    width: 24px;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul li {
+    height: 70px;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul li a {
+    font-size: 10px;
+    font-weight: 400;
+    color: black;
+  }
+  header .layout--onecol .layout__region--content .social-media-links--platforms {
+    width: max-content;
+    padding: 0 5px;
+  }
+  header .layout--onecol .layout__region--content .search-block-form {
+    margin-right: 5px;
+  }
+  header .layout--onecol .layout__region--content .search-block-form .form-type-search {
+    margin: 0;
+  }
+  header .layout--onecol .layout__region--content .search-block-form input.form-search {
+    width: 90px;
+    height: 24px;
+    font-size: 12px;
+  }
+  header .layout--onecol .layout__region--content .search-block-form input.form-submit {
+    width: 24px;
+    height: 24px;
+    margin-left: -6px;
+    padding-bottom: 10px;
+    background-size: cover;
+  }
+}
+@media (max-width: 900px) {
+  .path-frontpage header #block-exam-theme-menunavigation {
+    top: 50px;
+  }
+  header .layout--onecol {
+    width: 600px;
+  }
+  header .layout--onecol .layout__region--content {
+    height: 55px;
+    /* Стилізувати іконку гамбургер-меню */
+  }
+  header .layout--onecol .layout__region--content .block-inline-blocktitle-block {
+    height: 55px;
+  }
+  header .layout--onecol .layout__region--content .block-inline-blocktitle-block > div {
+    font-size: 9px;
+    font-weight: 400;
+    color: white;
+  }
+  header .layout--onecol .layout__region--content .block-inline-blocktitle-block div:first-child {
+    font-size: 20px;
+    font-weight: 500;
+    color: #6E9BCA;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul.menu-level-0 > li {
+    display: none;
+  }
+  header .layout--onecol .layout__region--content .hamburger-toggle {
+    display: block;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+  }
+  header .layout--onecol .layout__region--content .hamburger-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  header .layout--onecol .layout__region--content .hamburger-toggle span:nth-child(1) {
+    top: 0;
+  }
+  header .layout--onecol .layout__region--content .hamburger-toggle span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header .layout--onecol .layout__region--content .hamburger-toggle span:nth-child(3) {
+    bottom: 0;
+  }
+  header .layout--onecol .layout__region--content .menu.menu-level-0.open {
+    z-index: 999;
+    display: block; /* Показуємо меню при кліку */
+  }
+  header .layout--onecol .layout__region--content .menu--main ul.open > li {
+    display: block; /* Робимо всі елементи блочними */
+    padding: 10px;
+  }
+  header .layout--onecol .layout__region--content .menu.menu-level-0 > li:hover {
+    background-color: #f0f0f0; /* Задаємо кольори при наведенні */
+  }
+  header .layout--onecol .layout__region--content .social-media-links--platforms {
+    width: max-content;
+    padding: 0 5px;
+  }
+  header .layout--onecol .layout__region--content .search-block-form {
+    margin-right: 5px;
+  }
+  header .layout--onecol .layout__region--content .search-block-form .form-type-search {
+    margin: 0;
+  }
+  header .layout--onecol .layout__region--content .search-block-form input.form-search {
+    width: 70px;
+    height: 20px;
+    font-size: 12px;
+  }
+  header .layout--onecol .layout__region--content .search-block-form input.form-submit {
+    width: 20px;
+    height: 20px;
+    margin-left: -6px;
+    padding-bottom: 10px;
+    background-size: cover;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

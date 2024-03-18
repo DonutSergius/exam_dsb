@@ -3,14 +3,12 @@
 .block-views-block {
   &projects-block-block-1, &projects-block-block-2{
     h2 {
-      font-size: $font_page_title;
       text-transform: uppercase;
       text-align: center;
       white-space: nowrap;
       position: relative;
-      font-weight: 300;
-      margin-bottom: 20px;
       letter-spacing: -2px;
+      @include textFormat( $font_page_title, 300, black);
 
       &:before, &:after {
         content: "";
@@ -35,7 +33,7 @@
     .view-content {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-evenly;
       .views-row {
         text-align: center;
         max-width: 25%;
@@ -80,5 +78,91 @@
     }
 
     margin-bottom: 75px;
+  }
+}
+
+@media (max-width: $desktop) {
+  .block-views-block {
+    &projects-block-block-1, &projects-block-block-2{
+      h2 {
+        &:before, &:after {
+          width: calc(($smallDesktop / 2) - 56px);
+        }
+      }
+      .view-content{
+        .views-row{
+          .views-field{
+            &-field-images{
+              img{
+                width: 200px;
+                height: auto;
+              }
+            }
+            &-field-service-term{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $smallDesktop) {
+  .block-views-block {
+    &projects-block-block-1, &projects-block-block-2{
+      h2 {
+        &:before, &:after {
+          width: calc(($table / 2) - 56px);
+        }
+      }
+      .view-content{
+        .views-row{
+          max-width: 50%;
+          .views-field{
+            &-field-images{
+              img{
+                width: 280px;
+                height: auto;
+              }
+            }
+            &-field-service-term{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: $table) {
+  .block-views-block {
+    &projects-block-block-1, &projects-block-block-2{
+      h2 {
+        &:before, &:after {
+          width: calc(($phone / 2) - 56px);
+        }
+      }
+      .view-content{
+        .views-row{
+          max-width: 100%;
+          .views-field{
+            &-field-images{
+              img{
+                width: 280px;
+                height: auto;
+              }
+              margin-bottom: 15px;
+            }
+            &-field-service-term{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      margin-bottom: 20px;
+    }
   }
 }

@@ -1,48 +1,108 @@
 @import "variable";
 @import "mixin";
 
-.block-views-blockabout-block-block-1{
-  .about{
+.block-views-blockabout-block-block-1 {
+  .about {
 
-    .view-content{
+    .view-content {
       @include centerElem;
       height: 260px;
-        .views-row{
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
-          text-transform: uppercase;
-          padding: 15px 0;
-          border-top:5px solid $footerColor ;
-          border-bottom:5px solid $titleColor ;
-          .views-field{
-            &-title{
-              @include centerElem;
-              font-size: 30px;
-              a{
-                color: black;
-                font-weight: bold;
-              }
+
+      .views-row {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        text-transform: uppercase;
+        padding: 15px 0;
+        border-top: 5px solid $footerColor;
+        border-bottom: 5px solid $titleColor;
+
+        .views-field {
+          &-title {
+            @include centerElem;
+            font-size: 30px;
+
+            a {
+              color: black;
+              font-weight: bold;
+            }
+          }
+
+          &-body {
+            @include textFormat(20px, 400, gray);
+            @include centerElem;
+            letter-spacing: -0.5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .block-views-blockabout-block-block-1 {
+    .about {
+      .view-content {
+        height: 200px;
+
+        .views-field-title {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $smallDesktop) {
+  .block-views-blockabout-block-block-1 {
+    .about {
+      .view-content {
+        height: max-content;
+        margin: 15px auto;
+
+        .views-row {
+          .views-field {
+            &-title {
+              margin-right: 10px;
+              font-size: 24px;
             }
 
-            &-body{
-              font-size: 20px;
-              color: gray;
-              @include centerElem;
-              letter-spacing: -0.5px;
-            }
-
-            &-view-node{
-              @include centerElem;
+            &-body {
               font-size: 14px;
-              a{
-                color: white;
-                background-color: $titleColor;
-                padding: 8px 10px;
-              }
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: $table) {
+  .block-views-blockabout-block-block-1 {
+    .about {
+      .view-content {
+        height: max-content;
+        margin: 15px auto;
+
+        .views-row {
+          flex-wrap: wrap;
+          .views-field {
+            &-title {
+              width: 100%;
+              margin-right: 10px;
+              font-size: 22px;
+              span{
+                margin: 0 auto;
+              }
+            }
+
+            &-body {
+              width:65%;
+              font-size: 12px;
+            }
+          }
+        }
+      }
     }
   }
 }

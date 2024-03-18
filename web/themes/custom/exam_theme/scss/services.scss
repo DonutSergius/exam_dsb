@@ -4,8 +4,7 @@
 .block-views-block {
   &services-block-block-1, &services-block-block-2{
     h2 {
-      font-size: $font_page_title;
-      font-weight: bold;
+      @include textFormat($font_page_title, bold, black);
       text-transform: uppercase;
       text-align: center;
       white-space: nowrap;
@@ -56,10 +55,9 @@
           }
 
           &-body {
-            font-size: 12px;
+            @include textFormat($fontS, 400, $gray);
             line-height: 12px;
-            letter-spacing: 0px;
-            color: $gray;
+            letter-spacing: 0;
             margin-bottom: 30px;
           }
         }
@@ -67,5 +65,59 @@
     }
 
     margin-bottom: 75px;
+  }
+}
+
+@media(max-width: $desktop){
+  .block-views-block{
+   &services-block-block-1, &services-block-block-2{
+      h2{
+        margin-bottom: 40px;
+
+        &:before, &:after {
+          width: calc(($smallDesktop / 2) - 80px);
+        }
+      }
+   }
+  }
+}
+
+@media(max-width: $smallDesktop){
+  .block-views-block{
+    &services-block-block-1, &services-block-block-2{
+      h2{
+        margin-bottom: 20px;
+
+        &:before, &:after {
+          width: calc(($table / 2) - 80px);
+        }
+      }
+      .view-content{
+        .views-row{
+          max-width: 50%;
+        }
+      }
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media(max-width: $table){
+  .block-views-block{
+    &services-block-block-1, &services-block-block-2{
+      h2{
+        margin-bottom: 10px;
+
+        &:before, &:after {
+          width: calc(($phone / 2) - 80px);
+        }
+      }
+      .view-content{
+        .views-row{
+          max-width: 100%;
+        }
+      }
+      margin-bottom: 20px;
+    }
   }
 }

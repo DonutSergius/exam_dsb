@@ -15,3 +15,8 @@ global:
       css/team.css: { }
       css/clients.css: { }
       css/news.css: { }
+  js:
+    js/menu.js: { }
+js:
+  js:
+    js/menu.js: { }

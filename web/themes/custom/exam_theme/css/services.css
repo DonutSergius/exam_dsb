@@ -4,6 +4,7 @@
 .block-views-blockservices-block-block-1 h2, .block-views-blockservices-block-block-2 h2 {
   font-size: 24px;
   font-weight: bold;
+  color: black;
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -49,10 +50,48 @@
 }
 .block-views-blockservices-block-block-1 .view-content .views-row .views-field-body, .block-views-blockservices-block-block-2 .view-content .views-row .views-field-body {
   font-size: 12px;
-  line-height: 12px;
-  letter-spacing: 0px;
+  font-weight: 400;
   color: #D5D5D5;
+  line-height: 12px;
+  letter-spacing: 0;
   margin-bottom: 30px;
+}
+
+@media (max-width: 1220px) {
+  .block-views-blockservices-block-block-1 h2, .block-views-blockservices-block-block-2 h2 {
+    margin-bottom: 40px;
+  }
+  .block-views-blockservices-block-block-1 h2:before, .block-views-blockservices-block-block-1 h2:after, .block-views-blockservices-block-block-2 h2:before, .block-views-blockservices-block-block-2 h2:after {
+    width: 370px;
+  }
+}
+@media (max-width: 900px) {
+  .block-views-blockservices-block-block-1, .block-views-blockservices-block-block-2 {
+    margin-bottom: 30px;
+  }
+  .block-views-blockservices-block-block-1 h2, .block-views-blockservices-block-block-2 h2 {
+    margin-bottom: 20px;
+  }
+  .block-views-blockservices-block-block-1 h2:before, .block-views-blockservices-block-block-1 h2:after, .block-views-blockservices-block-block-2 h2:before, .block-views-blockservices-block-block-2 h2:after {
+    width: 220px;
+  }
+  .block-views-blockservices-block-block-1 .view-content .views-row, .block-views-blockservices-block-block-2 .view-content .views-row {
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .block-views-blockservices-block-block-1, .block-views-blockservices-block-block-2 {
+    margin-bottom: 20px;
+  }
+  .block-views-blockservices-block-block-1 h2, .block-views-blockservices-block-block-2 h2 {
+    margin-bottom: 10px;
+  }
+  .block-views-blockservices-block-block-1 h2:before, .block-views-blockservices-block-block-1 h2:after, .block-views-blockservices-block-block-2 h2:before, .block-views-blockservices-block-block-2 h2:after {
+    width: 70px;
+  }
+  .block-views-blockservices-block-block-1 .view-content .views-row, .block-views-blockservices-block-block-2 .view-content .views-row {
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=services.css.map */

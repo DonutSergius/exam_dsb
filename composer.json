@@ -28,6 +28,7 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "drupal/acquia_cms_site_studio": "^1.6",
         "drupal/address": "^2.0",
         "drupal/admin_toolbar": "^3.4",
         "drupal/classy": "^1.0",
@@ -44,6 +45,7 @@
         "drupal/menu_item_extras": "^2.19",
         "drupal/paragraphs": "^1.17",
         "drupal/rate": "^3.1",
+        "drupal/responsive_menus": "^2.0@beta",
         "drupal/search_api": "^1.31",
         "drupal/simple_gmap": "^3.1",
         "drupal/slick": "^2.10",
@@ -71,7 +73,8 @@
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "cweagans/composer-patches": false
         },
         "sort-packages": true
     },

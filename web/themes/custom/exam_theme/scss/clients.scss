@@ -4,8 +4,8 @@
 .block-views-block {
   &clients-block-block-1, &clients-block-block-2 {
     h2 {
-      font-size: $font_page_title;
-      font-weight: bold;
+      @include textFormat($font_page_title, bold, black);
+
       text-transform: uppercase;
       text-align: center;
       white-space: nowrap;
@@ -29,6 +29,57 @@
 
       &:after {
         margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .block-views-block {
+    &clients-block-block-1, &clients-block-block-2 {
+      h2 {
+        margin-bottom: 40px;
+        &:before, &:after {
+          width: calc(($smallDesktop / 2) - 72px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $smallDesktop) {
+  .block-views-block {
+    &clients-block-block-1, &clients-block-block-2 {
+      h2 {
+        margin-bottom: 40px;
+        &:before, &:after {
+          width: calc(($table / 2) - 72px);
+        }
+      }
+      .view-content{
+        img{
+          width:50px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $table) {
+  .block-views-block {
+    &clients-block-block-1, &clients-block-block-2 {
+      h2 {
+        margin-bottom: 20px;
+        &:before, &:after {
+          width: calc(($phone / 2) - 72px);
+        }
+      }
+      .view-content{
+        img{
+          width:30px;
+          height: auto;
+        }
       }
     }
   }

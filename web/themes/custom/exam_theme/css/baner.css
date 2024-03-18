@@ -20,20 +20,86 @@ header #block-exam-theme-baner .field--name-body > p {
 }
 header #block-exam-theme-baner .field--name-body p:first-child {
   font-size: 62px;
-  color: #ffffff;
+  font-weight: 400;
+  color: white;
   line-height: 62px;
 }
 header #block-exam-theme-baner .field--name-body p:nth-child(2) {
   font-size: 36px;
+  font-weight: 400;
   color: black;
   line-height: 36px;
   letter-spacing: 1.5px;
 }
 header #block-exam-theme-baner .field--name-body p:last-child {
   font-size: 14px;
-  line-height: 14px;
+  font-weight: 400;
   color: #6E9BCA;
+  line-height: 14px;
   letter-spacing: -0.5px;
+}
+header #block-exam-theme-baner .field--name-field-title-image img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1220px) {
+  header #block-exam-theme-baner .field--name-body {
+    top: 40%;
+    left: 15%;
+  }
+  header #block-exam-theme-baner .field--name-body > p {
+    width: 230px;
+  }
+  header #block-exam-theme-baner .field--name-body p:first-child {
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    line-height: 40px;
+  }
+  header #block-exam-theme-baner .field--name-body P:nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+  header #block-exam-theme-baner .field--name-body p:last-child {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6E9BCA;
+    line-height: 12px;
+    letter-spacing: -0.5px;
+  }
+}
+@media (max-width: 900px) {
+  header #block-exam-theme-baner .field--name-body {
+    top: 35%;
+    left: 10%;
+  }
+  header #block-exam-theme-baner .field--name-body > p {
+    width: 185px;
+  }
+  header #block-exam-theme-baner .field--name-body p:first-child {
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    line-height: 30px;
+  }
+  header #block-exam-theme-baner .field--name-body P:nth-child(2) {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+  header #block-exam-theme-baner .field--name-body p:last-child {
+    font-size: 10px;
+    font-weight: 400;
+    color: #6E9BCA;
+    line-height: 10px;
+    letter-spacing: -0.5px;
+  }
 }
 
 /*# sourceMappingURL=baner.css.map */

@@ -1,4 +1,5 @@
 @import "variable";
+@import "mixin";
 
 footer {
   margin-top: 20px;
@@ -17,18 +18,60 @@ footer {
         &--first{
           p{ margin-bottom: 0; }
           .field--name-field-title{
-            color: $titleColor;
-            font-weight: 500;
-            font-size: 28px;
+            @include textFormat(28px, 500, $titleColor);
           }
           .field--name-body{
-            font-size: 12px;
+            @include textFormat(12px, 400, white);
             height: max-content;
-            color: white;
           }
         }
         &--second {
           text-align: right;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop){
+    footer{
+      .region-footer{
+        padding: 10px;
+        width: $smallDesktop;
+      }
+    }
+}
+
+@media (max-width: $smallDesktop){
+  footer{
+    .region-footer{
+      padding: 10px;
+      width: $table;
+      .layout--twocol-section{
+        height: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: $table){
+  footer{
+    .region-footer{
+      padding: 10px;
+      width: $phone;
+      .layout--twocol-section{
+        height: 100px;
+        .layout__region {
+          &--first{
+            p{ margin-bottom: 0; }
+            .field--name-field-title{
+              @include textFormat(22px, 500, $titleColor);
+            }
+            .field--name-body{
+              @include textFormat(10px, 400, white);
+              height: max-content;
+            }
+          }
         }
       }
     }
