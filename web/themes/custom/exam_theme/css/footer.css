@@ -1,11 +1,11 @@
 footer {
   margin-top: 20px;
-  width: 100%;
   background-color: #373645;
 }
 footer .region-footer {
   margin: 0 auto;
-  width: 1280px;
+  padding: 0 10px;
+  max-width: 1280px;
 }
 footer .region-footer .layout--twocol-section {
   height: 196px;

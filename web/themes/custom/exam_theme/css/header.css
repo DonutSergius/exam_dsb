@@ -1,7 +1,6 @@
-@charset "UTF-8";
 .path-frontpage header #block-exam-theme-menunavigation {
   position: absolute;
-  top: 109px;
+  top: 50px;
   width: 100%;
   z-index: 300;
 }
@@ -68,6 +67,7 @@ header .layout--onecol .layout__region--content .menu--main ul {
 }
 header .layout--onecol .layout__region--content .menu--main ul li:first-child {
   align-items: center;
+  width: 28px;
 }
 header .layout--onecol .layout__region--content .menu--main ul li:first-child a {
   position: absolute;
@@ -75,17 +75,17 @@ header .layout--onecol .layout__region--content .menu--main ul li:first-child a 
   font-weight: 400;
   color: black;
   width: 28px;
-  opacity: 0;
+  opacity: 1;
+  text-indent: -999px;
   z-index: 100;
   letter-spacing: -10px;
+  background-image: url("/themes/custom/exam_theme/img/Homepage-menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 header .layout--onecol .layout__region--content .menu--main ul li:first-child img {
-  position: relative;
-  z-index: 50;
-  width: 28px;
-  margin-top: -7px;
-  height: auto;
-  cursor: pointer;
+  width: 0;
 }
 header .layout--onecol .layout__region--content .menu--main ul li:first-child:hover img {
   margin-top: 7px;
@@ -134,7 +134,7 @@ header .layout--onecol .layout__region--content .search-block-form input.form-su
   text-indent: -9999px;
   border: 1px solid gray;
   background-color: white;
-  background-image: url("dandruff.png");
+  background-image: url("/themes/custom/exam_theme/img/dandruff.png");
   background-repeat: no-repeat;
   background-position: center;
   margin-left: -6px;
@@ -142,7 +142,7 @@ header .layout--onecol .layout__region--content .search-block-form input.form-su
 
 @media (max-width: 1220px) {
   .path-frontpage header #block-exam-theme-menunavigation {
-    top: 79px;
+    top: 30px;
   }
   header .layout--onecol {
     width: 900px;
@@ -165,9 +165,6 @@ header .layout--onecol .layout__region--content .search-block-form input.form-su
     font-size: 28px;
     font-weight: 500;
     color: #6E9BCA;
-  }
-  header .layout--onecol .layout__region--content .menu--main ul li:first-child img {
-    width: 24px;
   }
   header .layout--onecol .layout__region--content .menu--main ul li {
     height: 70px;
@@ -202,14 +199,13 @@ header .layout--onecol .layout__region--content .search-block-form input.form-su
 }
 @media (max-width: 900px) {
   .path-frontpage header #block-exam-theme-menunavigation {
-    top: 50px;
+    top: 0;
   }
   header .layout--onecol {
     width: 600px;
   }
   header .layout--onecol .layout__region--content {
     height: 55px;
-    /* Стилізувати іконку гамбургер-меню */
   }
   header .layout--onecol .layout__region--content .block-inline-blocktitle-block {
     height: 55px;
@@ -223,6 +219,9 @@ header .layout--onecol .layout__region--content .search-block-form input.form-su
     font-size: 20px;
     font-weight: 500;
     color: #6E9BCA;
+  }
+  header .layout--onecol .layout__region--content .menu--main {
+    width: 220px;
   }
   header .layout--onecol .layout__region--content .menu--main ul.menu-level-0 > li {
     display: none;
@@ -254,37 +253,150 @@ header .layout--onecol .layout__region--content .search-block-form input.form-su
     bottom: 0;
   }
   header .layout--onecol .layout__region--content .menu.menu-level-0.open {
+    position: absolute;
     z-index: 999;
-    display: block; /* Показуємо меню при кліку */
+    display: flex;
+    padding-top: 10px;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul {
+    margin-left: -16px;
+    background-color: white;
+    width: 473px;
+    justify-content: space-evenly;
   }
   header .layout--onecol .layout__region--content .menu--main ul.open > li {
-    display: block; /* Робимо всі елементи блочними */
-    padding: 10px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    height: 50px;
+    display: block;
+    margin: 0;
   }
-  header .layout--onecol .layout__region--content .menu.menu-level-0 > li:hover {
-    background-color: #f0f0f0; /* Задаємо кольори при наведенні */
+  header .layout--onecol .layout__region--content .menu--main ul.open > li a {
+    margin: 0;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul.open > li:first-child a {
+    margin-left: -12px;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul.open > li:first-child .layout--onecol {
+    display: contents;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul.open > li:first-child .layout--onecol .block-layout-builder {
+    margin: 0 auto;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul.open > li:hover {
+    border-bottom: 7px solid #6E9BCA;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul.open > li .layout--onecol {
+    display: none;
+  }
+  header .layout--onecol .layout__region--content .social-media-links--platforms {
+    width: max-content;
+    padding: 0 5px;
+  }
+  header .layout--onecol .layout__region--content .search-block-form input.form-search {
+    width: 80px;
+    height: 25px;
+  }
+  header .layout--onecol .layout__region--content .search-block-form input.form-submit {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 600px) {
+  header .layout--onecol {
+    width: 100%;
+  }
+  header .layout--onecol .layout__region--content {
+    height: 40px;
+  }
+  header .layout--onecol .layout__region--content .block-inline-blocktitle-block {
+    height: 40px;
+  }
+  header .layout--onecol .layout__region--content .block-inline-blocktitle-block > div {
+    padding: 0 5px;
+    font-size: 8px;
+    font-weight: 400;
+    color: white;
+  }
+  header .layout--onecol .layout__region--content .block-inline-blocktitle-block div:first-child {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6E9BCA;
+  }
+  header .layout--onecol .layout__region--content .menu--main {
+    margin-left: 5px;
+    min-width: 25px;
+    width: 40%;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul.menu-level-0 > li {
+    display: none;
+  }
+  header .layout--onecol .layout__region--content .hamburger-toggle {
+    width: 25px;
+    height: 20px;
+  }
+  header .layout--onecol .layout__region--content .hamburger-toggle span {
+    width: 100%;
+  }
+  header .layout--onecol .layout__region--content .menu.menu-level-0.open {
+    position: absolute;
+    z-index: 999;
+    display: block;
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul {
+    margin-left: 0;
+    position: relative;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul.open > li {
+    width: 150px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul.open > li a {
+    margin: 0;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul.open > li:first-child a {
+    margin-left: -12px;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul.open > li:hover {
+    border-radius: 10px;
+    border-bottom: 7px solid #6E9BCA;
+  }
+  header .layout--onecol .layout__region--content .menu--main ul.open > li .layout--onecol {
+    display: none;
   }
   header .layout--onecol .layout__region--content .social-media-links--platforms {
     width: max-content;
     padding: 0 5px;
   }
   header .layout--onecol .layout__region--content .search-block-form {
-    margin-right: 5px;
-  }
-  header .layout--onecol .layout__region--content .search-block-form .form-type-search {
-    margin: 0;
+    width: 20%;
+    min-width: 85px;
   }
   header .layout--onecol .layout__region--content .search-block-form input.form-search {
-    width: 70px;
+    width: calc(100% - 20px - 5px);
     height: 20px;
-    font-size: 12px;
+    padding-top: 4px;
   }
   header .layout--onecol .layout__region--content .search-block-form input.form-submit {
+    padding: 0;
     width: 20px;
     height: 20px;
-    margin-left: -6px;
-    padding-bottom: 10px;
-    background-size: cover;
   }
 }
 
