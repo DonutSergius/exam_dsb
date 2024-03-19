@@ -58,27 +58,34 @@
   }
 }
 
+.block-views-block {
+  &services-block-block-2, &projects-block-block-2, &our-team-block-block-2,
+  &news-block-block-2, &clients-block-block-2 {
+    margin-top: 15px;
+  }
+}
 
-@media (max-width: $desktop){
-  .views-field-title{
+
+@media (max-width: $desktop) {
+  .views-field-title {
     font-size: 14px;
   }
 
-  .view-content{
+  .view-content {
     width: $smallDesktop;
   }
 
-  .social-media-links--platforms{
-    li{
-      a{
-        span{
+  .social-media-links--platforms {
+    li {
+      a {
+        span {
           font-size: 22px;
         }
       }
     }
   }
 
-  .views-field{
+  .views-field {
     &-view-node {
       @include centerElem;
 
@@ -97,32 +104,32 @@
   }
 }
 
-@media (max-width: $smallDesktop){
+@media (max-width: $smallDesktop) {
 
-  .layout--twocol-section{
-    & > .layout__region{
+  .layout--twocol-section {
+    & > .layout__region {
       flex: 0 0 50%;
     }
   }
-  .views-field-title{
+  .views-field-title {
     font-size: 12px;
   }
 
-  .view-content{
+  .view-content {
     width: $table;
   }
 
-  .social-media-links--platforms{
-    li{
-      a{
-        span{
+  .social-media-links--platforms {
+    li {
+      a {
+        span {
           font-size: 18px;
         }
       }
     }
   }
 
-  .views-field{
+  .views-field {
     &-view-node {
       .field-content {
         a {
@@ -133,32 +140,32 @@
   }
 }
 
-@media (max-width: $table){
+@media (max-width: $table) {
 
-  .layout--twocol-section{
-    & > .layout__region{
+  .layout--twocol-section {
+    & > .layout__region {
       flex: 0 0 50%;
     }
   }
-  .views-field-title{
+  .views-field-title {
     font-size: 12px;
   }
 
-  .view-content{
+  .view-content {
     width: $phone;
   }
 
-  .social-media-links--platforms{
-    li{
-      a{
-        span{
+  .social-media-links--platforms {
+    li {
+      a {
+        span {
           font-size: 18px;
         }
       }
     }
   }
 
-  .views-field{
+  .views-field {
     &-view-node {
       .field-content {
         a {

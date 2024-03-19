@@ -1,0 +1,86 @@
+@import "variable";
+@import "mixin";
+
+.node--team-node-full {
+  .layout__region--content {
+
+  }
+
+}
+
+.node-- {
+  &services-node-, &projects-node-, &team-node- {
+    &full {
+      margin-top: 50px;
+
+      .layout__region--content {
+        padding: 0 20px;
+
+        .block-field-blocknodeservices, .block-field-blocknodeprojects {
+          &-nodefield-images {
+            float: right;
+
+            img {
+              margin: 50px;
+              margin-top: 0;
+              width: 300px;
+              height: auto;
+            }
+          }
+
+          &-nodetitle {
+            @include textFormat($font_elem, bold, black);
+            margin-bottom: 70px;
+          }
+
+          &-nodebody, &-nodefield-contents {
+            font-size: $font_elem;
+          }
+
+          &-nodefield-service-term {
+            font-size: 26px;
+          }
+        }
+
+        .block-field-blocknodeteam {
+          &-nodefield-team-image {
+            float: left;
+            width: max-content;
+
+            img {
+              padding: 30px;
+              padding-top: 0;
+              margin: 20px;
+              margin-top: 0;
+              width: 300px;
+              height: auto;
+              border: 1px solid $gray;
+              border-radius: 20px;
+            }
+          }
+
+          &-nodefield-name, {
+            float: left;
+            margin-right: 15px;
+          }
+
+          &-nodefield-position {
+            height: 50px;
+          }
+
+          &-nodefield-social-links {
+            width: max-content;
+            margin-left: 70px;
+            float: left;
+          }
+        }
+        .block-extra-field-blocknodeteam-noderate-testlike{
+          .like{
+            margin-left: 10px;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

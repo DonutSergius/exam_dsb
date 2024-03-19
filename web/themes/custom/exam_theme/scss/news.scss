@@ -3,35 +3,11 @@
 
 .block-views-block {
   &news-block-block-1, &news-block-block-2 {
+    width: 100%;
     h2 {
       @include textFormat($font_page_title, bold, black);
-
-      text-transform: uppercase;
-      text-align: center;
-      white-space: nowrap;
-      position: relative;
+      @include titleBlock(50px, 20px, $desktop, 54px, $gray);
       letter-spacing: -2px;
-
-      &:before, &:after {
-        content: "";
-        position: relative;
-        top: 50%;
-        width: calc(($desktop / 2) - 54px);
-        height: 1px;
-        background-color: $gray;
-        display: inline-block;
-        vertical-align: middle;
-      }
-
-      &:before {
-        margin-right: 20px;
-      }
-
-      &:after {
-        margin-left: 20px;
-      }
-
-      margin-bottom: 50px;
     }
 
     .view-news-block {
@@ -57,7 +33,7 @@
               }
 
               .form-text {
-                @include textFormat(16px, 400, $gray);
+                @include textFormat(16px, 400, black);
                 padding: 0 10px;
                 border: 1px solid gray;
                 border-radius: 5px;

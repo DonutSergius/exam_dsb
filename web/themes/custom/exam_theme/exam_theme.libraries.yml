@@ -15,8 +15,9 @@ global:
       css/team.css: { }
       css/clients.css: { }
       css/news.css: { }
-  js:
-    js/menu.js: { }
+      css/contact.css: { }
+      css/about_page.css: { }
+      css/node.css: { }
 js:
   js:
     js/menu.js: { }

@@ -3,31 +3,9 @@
 .block-views-block {
   &projects-block-block-1, &projects-block-block-2{
     h2 {
-      text-transform: uppercase;
-      text-align: center;
-      white-space: nowrap;
-      position: relative;
       letter-spacing: -2px;
       @include textFormat( $font_page_title, 300, black);
-
-      &:before, &:after {
-        content: "";
-        position: relative;
-        top: 50%;
-        width: calc(($desktop / 2) - 56px);
-        height: 1px;
-        background-color: $gray;
-        display: inline-block;
-        vertical-align: middle;
-      }
-
-      &:before {
-        margin-right: 2px;
-      }
-
-      &:after {
-        margin-left: 2px;
-      }
+      @include titleBlock(20px, 2px, $desktop, 56px, $gray);
     }
 
     .view-content {
@@ -78,6 +56,11 @@
     }
 
     margin-bottom: 75px;
+  }
+  &projects-block-block-2{
+    h2{
+      @include titleBlock(75px, 2px, $desktop, 56px, $gray);
+    }
   }
 }
 

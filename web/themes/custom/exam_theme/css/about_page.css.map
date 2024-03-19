@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/about_page.scss","../scss/_variable.scss","../scss/_mixin.scss"],"names":[],"mappings":"AAGA;EACE,WCJQ;EDKR;;AAQc;EEPd;EACA,aFOsD;EENtD,OFM4D;EEF5D;EACA;EACA;EACA;EACA,eFDoC;;AEEpC;EACE;EACA;EACA;EACA;EACA;EACA,kBDbG;ECcH;EACA;;AAGF;EACE,cFdwC;;AEiB1C;EACE,aFlBwC;;AAGhC;EEZV;EACA,aFYkD;EEXlD,ODIW","file":"about_page.css"}

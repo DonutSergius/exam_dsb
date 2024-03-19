@@ -8,3 +8,29 @@
   font-weight: $font_weight;
   color: $font_color;
 }
+
+@mixin titleBlock ($gutter_bottom, $margin, $width, $space, $color_line){
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  margin-bottom: $gutter_bottom;
+  &:before, &:after {
+    content: "";
+    position: relative;
+    top: 50%;
+    width: calc(($width / 2) - $space);
+    height: 1px;
+    background-color: $color_line;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &:before {
+    margin-right: $margin;
+  }
+
+  &:after {
+    margin-left: $margin;
+  }
+}

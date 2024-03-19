@@ -1,0 +1,28 @@
+@import "variable";
+@import "mixin";
+
+.block-system-main-block {
+  max-width: $desktop;
+  margin: 0 auto;
+  article[data-history-node-id="5"] {
+
+      .node__content {
+        .layout-- {
+          &onecol {
+            .block-field-block{
+              &nodepagetitle{
+                span{
+                  @include textFormat($font_page_title, bold, black);
+                  @include titleBlock(50px, 20px, $desktop, 63px, $gray);
+                }
+              }
+            &nodepagebody {
+              @include textFormat($font_page_title, 400, $titleColor);
+            }
+            }
+          }
+        }
+
+    }
+  }
+}

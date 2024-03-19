@@ -1,0 +1,59 @@
+.node--services-node-full, .node--projects-node-full, .node--team-node-full {
+  margin-top: 50px;
+}
+.node--services-node-full .layout__region--content, .node--projects-node-full .layout__region--content, .node--team-node-full .layout__region--content {
+  padding: 0 20px;
+}
+.node--services-node-full .layout__region--content .block-field-blocknodeservices-nodefield-images, .node--services-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-images, .node--projects-node-full .layout__region--content .block-field-blocknodeservices-nodefield-images, .node--projects-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-images, .node--team-node-full .layout__region--content .block-field-blocknodeservices-nodefield-images, .node--team-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-images {
+  float: right;
+}
+.node--services-node-full .layout__region--content .block-field-blocknodeservices-nodefield-images img, .node--services-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-images img, .node--projects-node-full .layout__region--content .block-field-blocknodeservices-nodefield-images img, .node--projects-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-images img, .node--team-node-full .layout__region--content .block-field-blocknodeservices-nodefield-images img, .node--team-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-images img {
+  margin: 50px;
+  margin-top: 0;
+  width: 300px;
+  height: auto;
+}
+.node--services-node-full .layout__region--content .block-field-blocknodeservices-nodetitle, .node--services-node-full .layout__region--content .block-field-blocknodeprojects-nodetitle, .node--projects-node-full .layout__region--content .block-field-blocknodeservices-nodetitle, .node--projects-node-full .layout__region--content .block-field-blocknodeprojects-nodetitle, .node--team-node-full .layout__region--content .block-field-blocknodeservices-nodetitle, .node--team-node-full .layout__region--content .block-field-blocknodeprojects-nodetitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 70px;
+}
+.node--services-node-full .layout__region--content .block-field-blocknodeservices-nodebody, .node--services-node-full .layout__region--content .block-field-blocknodeservices-nodefield-contents, .node--services-node-full .layout__region--content .block-field-blocknodeprojects-nodebody, .node--services-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-contents, .node--projects-node-full .layout__region--content .block-field-blocknodeservices-nodebody, .node--projects-node-full .layout__region--content .block-field-blocknodeservices-nodefield-contents, .node--projects-node-full .layout__region--content .block-field-blocknodeprojects-nodebody, .node--projects-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-contents, .node--team-node-full .layout__region--content .block-field-blocknodeservices-nodebody, .node--team-node-full .layout__region--content .block-field-blocknodeservices-nodefield-contents, .node--team-node-full .layout__region--content .block-field-blocknodeprojects-nodebody, .node--team-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-contents {
+  font-size: 32px;
+}
+.node--services-node-full .layout__region--content .block-field-blocknodeservices-nodefield-service-term, .node--services-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-service-term, .node--projects-node-full .layout__region--content .block-field-blocknodeservices-nodefield-service-term, .node--projects-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-service-term, .node--team-node-full .layout__region--content .block-field-blocknodeservices-nodefield-service-term, .node--team-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-service-term {
+  font-size: 26px;
+}
+.node--services-node-full .layout__region--content .block-field-blocknodeteam-nodefield-team-image, .node--projects-node-full .layout__region--content .block-field-blocknodeteam-nodefield-team-image, .node--team-node-full .layout__region--content .block-field-blocknodeteam-nodefield-team-image {
+  float: left;
+  width: max-content;
+}
+.node--services-node-full .layout__region--content .block-field-blocknodeteam-nodefield-team-image img, .node--projects-node-full .layout__region--content .block-field-blocknodeteam-nodefield-team-image img, .node--team-node-full .layout__region--content .block-field-blocknodeteam-nodefield-team-image img {
+  padding: 30px;
+  padding-top: 0;
+  margin: 20px;
+  margin-top: 0;
+  width: 300px;
+  height: auto;
+  border: 1px solid #D5D5D5;
+  border-radius: 20px;
+}
+.node--services-node-full .layout__region--content .block-field-blocknodeteam-nodefield-name, .node--projects-node-full .layout__region--content .block-field-blocknodeteam-nodefield-name, .node--team-node-full .layout__region--content .block-field-blocknodeteam-nodefield-name {
+  float: left;
+  margin-right: 15px;
+}
+.node--services-node-full .layout__region--content .block-field-blocknodeteam-nodefield-position, .node--projects-node-full .layout__region--content .block-field-blocknodeteam-nodefield-position, .node--team-node-full .layout__region--content .block-field-blocknodeteam-nodefield-position {
+  height: 50px;
+}
+.node--services-node-full .layout__region--content .block-field-blocknodeteam-nodefield-social-links, .node--projects-node-full .layout__region--content .block-field-blocknodeteam-nodefield-social-links, .node--team-node-full .layout__region--content .block-field-blocknodeteam-nodefield-social-links {
+  width: max-content;
+  margin-left: 70px;
+  float: left;
+}
+.node--services-node-full .layout__region--content .block-extra-field-blocknodeteam-noderate-testlike .like, .node--projects-node-full .layout__region--content .block-extra-field-blocknodeteam-noderate-testlike .like, .node--team-node-full .layout__region--content .block-extra-field-blocknodeteam-noderate-testlike .like {
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=node.css.map */

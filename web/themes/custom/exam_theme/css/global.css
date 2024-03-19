@@ -39,6 +39,10 @@
   color: #373645;
 }
 
+.block-views-blockservices-block-block-2, .block-views-blockprojects-block-block-2, .block-views-blockour-team-block-block-2, .block-views-blocknews-block-block-2, .block-views-blockclients-block-block-2 {
+  margin-top: 15px;
+}
+
 @media (max-width: 1220px) {
   .views-field-title {
     font-size: 14px;

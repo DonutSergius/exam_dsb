@@ -1,3 +1,6 @@
+.block-views-blocknews-block-block-1, .block-views-blocknews-block-block-2 {
+  width: 100%;
+}
 .block-views-blocknews-block-block-1 h2, .block-views-blocknews-block-block-2 h2 {
   font-size: 24px;
   font-weight: bold;
@@ -6,8 +9,8 @@
   text-align: center;
   white-space: nowrap;
   position: relative;
-  letter-spacing: -2px;
   margin-bottom: 50px;
+  letter-spacing: -2px;
 }
 .block-views-blocknews-block-block-1 h2:before, .block-views-blocknews-block-block-1 h2:after, .block-views-blocknews-block-block-2 h2:before, .block-views-blocknews-block-block-2 h2:after {
   content: "";
@@ -48,7 +51,7 @@
 .block-views-blocknews-block-block-1 .view-news-block .view-filters form .form--inline .form-type-textfield .form-text, .block-views-blocknews-block-block-2 .view-news-block .view-filters form .form--inline .form-type-textfield .form-text {
   font-size: 16px;
   font-weight: 400;
-  color: #D5D5D5;
+  color: black;
   padding: 0 10px;
   border: 1px solid gray;
   border-radius: 5px;
