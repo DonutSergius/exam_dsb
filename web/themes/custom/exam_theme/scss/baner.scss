@@ -117,11 +117,9 @@ header {
 }
 
 @media(max-width: $table){
-  body{
-    overflow-x: hidden;
-  }
   header{
     #block-exam-theme-baner{
+      overflow: hidden;
       .field--name{
         &-body{
           top: 40%;

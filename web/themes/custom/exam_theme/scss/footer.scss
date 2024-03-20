@@ -18,10 +18,10 @@ footer {
         &--first{
           p{ margin-bottom: 0; }
           .field--name-field-title{
-            @include textFormat(28px, 500, $titleColor);
+            @include textFormat(32px, 500, $titleColor);
           }
           .field--name-body{
-            @include textFormat(12px, 400, white);
+            @include textFormat(14px, 400, white);
             height: max-content;
           }
         }

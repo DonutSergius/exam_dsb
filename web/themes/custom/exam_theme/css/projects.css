@@ -3,9 +3,9 @@
 }
 .block-views-blockprojects-block-block-1 h2, .block-views-blockprojects-block-block-2 h2 {
   letter-spacing: -2px;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 300;
-  color: black;
+  color: #373645;
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -16,7 +16,7 @@
   content: "";
   position: relative;
   top: 50%;
-  width: 554px;
+  width: 544px;
   height: 1px;
   background-color: #D5D5D5;
   display: inline-block;
@@ -35,7 +35,7 @@
 }
 .block-views-blockprojects-block-block-1 .view-content .views-row, .block-views-blockprojects-block-block-2 .view-content .views-row {
   text-align: center;
-  max-width: 25%;
+  max-width: 280px;
   background-color: #ffffff;
   margin-bottom: 20px;
 }
@@ -98,7 +98,7 @@
 
 @media (max-width: 1220px) {
   .block-views-blockprojects-block-block-1 h2:before, .block-views-blockprojects-block-block-1 h2:after, .block-views-blockprojects-block-block-2 h2:before, .block-views-blockprojects-block-block-2 h2:after {
-    width: 394px;
+    width: 384px;
   }
   .block-views-blockprojects-block-block-1 .view-content .views-row .views-field-field-images img, .block-views-blockprojects-block-block-2 .view-content .views-row .views-field-field-images img {
     width: 200px;
@@ -113,7 +113,7 @@
     margin-bottom: 30px;
   }
   .block-views-blockprojects-block-block-1 h2:before, .block-views-blockprojects-block-block-1 h2:after, .block-views-blockprojects-block-block-2 h2:before, .block-views-blockprojects-block-block-2 h2:after {
-    width: 244px;
+    width: 234px;
   }
   .block-views-blockprojects-block-block-1 .view-content .views-row, .block-views-blockprojects-block-block-2 .view-content .views-row {
     max-width: 50%;
@@ -131,7 +131,7 @@
     margin-bottom: 20px;
   }
   .block-views-blockprojects-block-block-1 h2:before, .block-views-blockprojects-block-block-1 h2:after, .block-views-blockprojects-block-block-2 h2:before, .block-views-blockprojects-block-block-2 h2:after {
-    width: 94px;
+    width: 84px;
   }
   .block-views-blockprojects-block-block-1 .view-content .views-row, .block-views-blockprojects-block-block-2 .view-content .views-row {
     max-width: 100%;

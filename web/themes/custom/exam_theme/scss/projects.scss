@@ -4,8 +4,8 @@
   &projects-block-block-1, &projects-block-block-2{
     h2 {
       letter-spacing: -2px;
-      @include textFormat( $font_page_title, 300, black);
-      @include titleBlock(20px, 2px, $desktop, 56px, $gray);
+      @include textFormat(28px, 300, $footerColor);
+      @include titleBlock(20px, 2px, $desktop, 66px, $gray);
     }
 
     .view-content {
@@ -14,7 +14,7 @@
       justify-content: space-evenly;
       .views-row {
         text-align: center;
-        max-width: 25%;
+        max-width: 280px;
         background-color: $white;
 
         &:first-child {
@@ -72,7 +72,7 @@
     &projects-block-block-1, &projects-block-block-2{
       h2 {
         &:before, &:after {
-          width: calc(($smallDesktop / 2) - 56px);
+          width: calc(($smallDesktop / 2) - 66px);
         }
       }
       .view-content{
@@ -99,7 +99,7 @@
     &projects-block-block-1, &projects-block-block-2{
       h2 {
         &:before, &:after {
-          width: calc(($table / 2) - 56px);
+          width: calc(($table / 2) - 66px);
         }
       }
       .view-content{
@@ -128,7 +128,7 @@
     &projects-block-block-1, &projects-block-block-2{
       h2 {
         &:before, &:after {
-          width: calc(($phone / 2) - 56px);
+          width: calc(($phone / 2) - 66px);
         }
       }
       .view-content{

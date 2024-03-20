@@ -5,8 +5,8 @@
   &news-block-block-1, &news-block-block-2 {
     width: 100%;
     h2 {
-      @include textFormat($font_page_title, bold, black);
-      @include titleBlock(50px, 20px, $desktop, 54px, $gray);
+      @include textFormat(28px, bold, $footerColor);
+      @include titleBlock(20px, 20px, $desktop, 58px, $gray);
       letter-spacing: -2px;
     }
 
@@ -19,7 +19,7 @@
         form {
           width: max-content;
           background-color: #f5f5f5;
-          padding: 10px 5px;
+          padding: 5px;
           border-radius: 5px;
 
           .form--inline {
@@ -36,8 +36,8 @@
                 @include textFormat(16px, 400, black);
                 padding: 0 10px;
                 border: 1px solid gray;
-                border-radius: 5px;
-                width: 300px;
+                border-radius: 3px;
+                width: 350px;
                 height: 30px;
                 margin-right: 5px;
               }
@@ -67,7 +67,7 @@
       .view-content {
         margin-top: 20px;
         padding-bottom: 80px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
 
         .views-row {
           background-color: white;
@@ -92,7 +92,7 @@
 
                 &:nth-child(2) {
                   line-height: 38px;
-                  @include textFormat(38px, bold, $color_drupal);
+                  @include textFormat(38px, bold, $titleColor);
                 }
 
                 &:last-child {
@@ -185,7 +185,7 @@
 
       h2{
         &:before, &:after {
-          width: calc(($smallDesktop / 2) - 52px);
+          width: calc(($smallDesktop / 2) - 60px);
         }
       }
 
@@ -215,7 +215,7 @@
       h2{
         margin-bottom: 20px;
         &:before, &:after {
-          width: calc(($table / 2) - 52px);
+          width: calc(($table / 2) - 60px);
         }
       }
 
@@ -248,7 +248,7 @@
         margin-bottom: 10px;
 
         &:before, &:after {
-          width: calc(($phone / 2) - 52px);
+          width: calc(($phone / 2) - 60px);
         }
       }
 

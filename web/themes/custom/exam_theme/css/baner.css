@@ -102,8 +102,8 @@ header #block-exam-theme-baner .field--name-field-title-image img {
   }
 }
 @media (max-width: 600px) {
-  body {
-    overflow-x: hidden;
+  header #block-exam-theme-baner {
+    overflow: hidden;
   }
   header #block-exam-theme-baner .field--name-body {
     top: 40%;

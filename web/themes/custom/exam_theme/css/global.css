@@ -30,6 +30,9 @@
   background-color: #50B9E6;
 }
 
+.pager {
+  margin: 50px 0;
+}
 .pager ul li {
   font-size: 14px;
 }

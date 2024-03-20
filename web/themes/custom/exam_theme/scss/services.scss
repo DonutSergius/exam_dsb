@@ -4,8 +4,8 @@
 .block-views-block {
   &services-block-block-1, &services-block-block-2 {
     h2 {
-      @include textFormat($font_page_title, bold, black);
-      @include titleBlock(75px, 20px, $desktop, 80px, $gray);
+      @include textFormat(28px, bold, $footerColor);
+      @include titleBlock(75px, 20px, $desktop, 89px, $gray);
     }
 
     .view-content {
@@ -89,7 +89,7 @@
         margin-bottom: 40px;
 
         &:before, &:after {
-          width: calc(($smallDesktop / 2) - 80px);
+          width: calc(($smallDesktop / 2) - 90px);
         }
       }
     }
@@ -103,7 +103,7 @@
         margin-bottom: 20px;
 
         &:before, &:after {
-          width: calc(($table / 2) - 80px);
+          width: calc(($table / 2) - 90px);
         }
       }
 
@@ -132,7 +132,7 @@
         margin-bottom: 10px;
 
         &:before, &:after {
-          width: calc(($phone / 2) - 80px);
+          width: calc(($phone / 2) - 90px);
         }
       }
 
