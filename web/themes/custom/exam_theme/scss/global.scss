@@ -36,6 +36,9 @@
       a {
         color: white;
       }
+      &:hover{
+        background-color: $color_drupal;
+      }
     }
   }
 }

@@ -29,7 +29,7 @@
           }
 
           &-body {
-            @include textFormat(20px, 400, gray);
+            @include textFormat(20px, 400, $gray);
             @include centerElem;
             letter-spacing: -0.5px;
           }

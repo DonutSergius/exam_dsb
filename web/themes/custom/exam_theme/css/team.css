@@ -62,6 +62,9 @@
   background-color: #373645;
   padding: 8px 10px;
 }
+.block-views-blockour-team-block-block-1 .view-content .views-row .node__links:hover, .block-views-blockour-team-block-block-2 .view-content .views-row .node__links:hover {
+  background-color: black;
+}
 .block-views-blockour-team-block-block-1 .view-content .views-row .node__links a, .block-views-blockour-team-block-block-2 .view-content .views-row .node__links a {
   font-size: 0;
   font-weight: 400;

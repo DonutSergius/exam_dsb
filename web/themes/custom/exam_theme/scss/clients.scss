@@ -8,6 +8,20 @@
       @include titleBlock(75px, 20px, $desktop, 72px, $gray);
     }
   }
+  &clients-block-block-2{
+    .view-content{
+      .views-row{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+      }
+    }
+      .pager{
+        margin-top: 30px;
+      }
+
+  }
 }
 
 @media (max-width: $desktop) {
@@ -39,6 +53,14 @@
         }
       }
     }
+    &clients-block-block-2{
+      .view-content{
+        img{
+          width:100px;
+          height: auto;
+        }
+      }
+    }
   }
 }
 
@@ -54,6 +76,14 @@
       .view-content{
         img{
           width:30px;
+          height: auto;
+        }
+      }
+    }
+    &clients-block-block-2{
+      .view-content{
+        img{
+          width:80px;
           height: auto;
         }
       }

@@ -51,13 +51,13 @@ header {
 
         & > div {
           padding: 0 15px;
-          @include textFormat(12px, 400, white);
+          @include textFormat(14px, 400, white);
           width: 100%;
           height: max-content;
         }
 
         div:first-child {
-          @include textFormat(26px, 500, $titleColor);
+          @include textFormat(32px, 500, $titleColor);
           margin-top: auto;
         }
 
@@ -76,7 +76,6 @@ header {
 
         ul {
           text-transform: uppercase;
-          // == bag ==
           li:first-child {
             align-items: center;
             width: 28px;

@@ -34,7 +34,7 @@
 
           &-title {
             margin-bottom: 10px;
-
+            @include textFormat($font_page_title, 400, $footerColor);
             a {
               color: black;
             }
@@ -46,6 +46,9 @@
           &-view-node {
             .field-content {
               background-color: $footerColor;
+              &:hover{
+                background-color: black;
+              }
             }
 
             margin-bottom: 10px;

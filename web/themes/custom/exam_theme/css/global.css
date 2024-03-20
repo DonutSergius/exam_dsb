@@ -26,6 +26,9 @@
 .views-field-view-node .field-content a {
   color: white;
 }
+.views-field-view-node .field-content:hover {
+  background-color: #50B9E6;
+}
 
 .pager ul li {
   font-size: 14px;

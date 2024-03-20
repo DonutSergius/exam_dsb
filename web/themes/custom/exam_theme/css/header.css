@@ -41,14 +41,14 @@ header .layout--onecol .layout__region--content .block-inline-blocktitle-block {
 }
 header .layout--onecol .layout__region--content .block-inline-blocktitle-block > div {
   padding: 0 15px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   color: white;
   width: 100%;
   height: max-content;
 }
 header .layout--onecol .layout__region--content .block-inline-blocktitle-block div:first-child {
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 500;
   color: #6E9BCA;
   margin-top: auto;

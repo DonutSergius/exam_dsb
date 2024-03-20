@@ -53,6 +53,9 @@
 }
 .block-views-blockprojects-block-block-1 .view-content .views-row .views-field-title, .block-views-blockprojects-block-block-2 .view-content .views-row .views-field-title {
   margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #373645;
 }
 .block-views-blockprojects-block-block-1 .view-content .views-row .views-field-title a, .block-views-blockprojects-block-block-2 .view-content .views-row .views-field-title a {
   color: black;
@@ -65,6 +68,9 @@
 }
 .block-views-blockprojects-block-block-1 .view-content .views-row .views-field-view-node .field-content, .block-views-blockprojects-block-block-2 .view-content .views-row .views-field-view-node .field-content {
   background-color: #373645;
+}
+.block-views-blockprojects-block-block-1 .view-content .views-row .views-field-view-node .field-content:hover, .block-views-blockprojects-block-block-2 .view-content .views-row .views-field-view-node .field-content:hover {
+  background-color: black;
 }
 .block-views-blockprojects-block-block-2 h2 {
   text-transform: uppercase;

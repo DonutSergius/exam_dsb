@@ -46,7 +46,9 @@
           margin: 0 auto;
           background-color: $footerColor;
           padding: 8px 10px;
-
+          &:hover{
+            background-color: black;
+          }
           a {
             @include textFormat(0, 400, white);
             font-size: 0;

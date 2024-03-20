@@ -47,6 +47,10 @@
               margin: 0;
 
               .form-submit {
+                &:hover{
+                  border: 1px solid $titleColor;
+                  background-color: $titleColor;
+                }
                 @include textFormat(16px, 400, $white);
                 height: 30px;
                 color: $white;
@@ -159,11 +163,13 @@
               width: 100%;
               padding-top: 10px;
               margin-left: 75px;
-
               .field-content {
                 margin-left: auto;
                 margin-right: 0;
-                background-color: $footerColor
+                background-color: $footerColor;
+                &:hover{
+                  background-color: black;
+                }
               }
             }
           }

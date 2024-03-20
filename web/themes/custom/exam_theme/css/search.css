@@ -1,0 +1,303 @@
+.path-search .block-system-main-block {
+  width: 1220px;
+  margin: 0 auto;
+}
+.path-search .block-system-main-block form .form-wrapper .form-type-search label {
+  font-size: 24px;
+}
+.path-search .block-system-main-block form .form-wrapper .form-type-search input {
+  font-size: 20px;
+  padding: 10px;
+}
+.path-search .block-system-main-block form .form-wrapper .form-submit {
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: #6E9BCA;
+  border-radius: 5px;
+  border: none;
+}
+.path-search .block-system-main-block form .form-wrapper .form-submit:hover {
+  background-color: #373645;
+}
+.path-search .block-system-main-block form a {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+.path-search .block-system-main-block h2 {
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  margin-bottom: 30px;
+}
+.path-search .block-system-main-block h2:before, .path-search .block-system-main-block h2:after {
+  content: "";
+  position: relative;
+  top: 50%;
+  width: 490px;
+  height: 1px;
+  background-color: #D5D5D5;
+  display: inline-block;
+  vertical-align: middle;
+}
+.path-search .block-system-main-block h2:before {
+  margin-right: 10px;
+}
+.path-search .block-system-main-block h2:after {
+  margin-left: 10px;
+}
+.path-search .block-system-main-block .item-list h3 {
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  margin-bottom: 30px;
+}
+.path-search .block-system-main-block .item-list h3:before, .path-search .block-system-main-block .item-list h3:after {
+  content: "";
+  position: relative;
+  top: 50%;
+  width: 422px;
+  height: 1px;
+  background-color: #D5D5D5;
+  display: inline-block;
+  vertical-align: middle;
+}
+.path-search .block-system-main-block .item-list h3:before {
+  margin-right: 10px;
+}
+.path-search .block-system-main-block .item-list h3:after {
+  margin-left: 10px;
+}
+.path-search .block-system-main-block .item-list .node_search-results {
+  padding: 0;
+}
+.path-search .block-system-main-block .item-list .node_search-results li {
+  border-top: 1px solid #D5D5D5;
+  border-bottom: 1px solid #D5D5D5;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 10px;
+}
+.path-search .block-system-main-block .item-list .node_search-results li:hover {
+  background-color: #D5D5D5;
+}
+.path-search .block-system-main-block .item-list .node_search-results li h3 {
+  text-align: left;
+  white-space: normal;
+}
+.path-search .block-system-main-block .item-list .node_search-results li h3 a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #373645;
+}
+.path-search .block-system-main-block .item-list .node_search-results li h3:before, .path-search .block-system-main-block .item-list .node_search-results li h3:after {
+  content: "";
+  margin: 0;
+  width: 0;
+}
+.path-search .block-system-main-block .item-list .node_search-results li p {
+  margin-left: 10px;
+}
+.path-search .block-system-main-block .item-list .node_search-results li p strong {
+  color: #373645;
+}
+.path-search .block-system-main-block .item-list .node_search-results li p.search-result__info a {
+  color: #6E9BCA;
+}
+
+@media (max-width: 1220px) {
+  .path-search .block-system-main-block {
+    width: 900px;
+  }
+  .path-search .block-system-main-block h2 {
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .path-search .block-system-main-block h2:before, .path-search .block-system-main-block h2:after {
+    content: "";
+    position: relative;
+    top: 50%;
+    width: 330px;
+    height: 1px;
+    background-color: #D5D5D5;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .path-search .block-system-main-block h2:before {
+    margin-right: 10px;
+  }
+  .path-search .block-system-main-block h2:after {
+    margin-left: 10px;
+  }
+  .path-search .block-system-main-block .item-list h3 {
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .path-search .block-system-main-block .item-list h3:before, .path-search .block-system-main-block .item-list h3:after {
+    content: "";
+    position: relative;
+    top: 50%;
+    width: 266px;
+    height: 1px;
+    background-color: #D5D5D5;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .path-search .block-system-main-block .item-list h3:before {
+    margin-right: 10px;
+  }
+  .path-search .block-system-main-block .item-list h3:after {
+    margin-left: 10px;
+  }
+  .path-search .block-system-main-block .item-list .node_search-results li h3 a {
+    font-size: 20px;
+  }
+  .path-search .block-system-main-block .item-list .node_search-results li p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .path-search .block-system-main-block {
+    width: 600px;
+  }
+  .path-search .block-system-main-block h2 {
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .path-search .block-system-main-block h2:before, .path-search .block-system-main-block h2:after {
+    content: "";
+    position: relative;
+    top: 50%;
+    width: 180px;
+    height: 1px;
+    background-color: #D5D5D5;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .path-search .block-system-main-block h2:before {
+    margin-right: 10px;
+  }
+  .path-search .block-system-main-block h2:after {
+    margin-left: 10px;
+  }
+  .path-search .block-system-main-block .item-list h3 {
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .path-search .block-system-main-block .item-list h3:before, .path-search .block-system-main-block .item-list h3:after {
+    content: "";
+    position: relative;
+    top: 50%;
+    width: 116px;
+    height: 1px;
+    background-color: #D5D5D5;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .path-search .block-system-main-block .item-list h3:before {
+    margin-right: 10px;
+  }
+  .path-search .block-system-main-block .item-list h3:after {
+    margin-left: 10px;
+  }
+  .path-search .block-system-main-block .item-list .node_search-results li h3 a {
+    font-size: 20px;
+  }
+  .path-search .block-system-main-block .item-list .node_search-results li p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .path-search .block-system-main-block {
+    width: 300px;
+  }
+  .path-search .block-system-main-block form .form-wrapper {
+    text-align: center;
+  }
+  .path-search .block-system-main-block form .form-wrapper .form-type-search {
+    text-align: center;
+  }
+  .path-search .block-system-main-block form .form-wrapper .form-type-search label {
+    font-size: 20px;
+  }
+  .path-search .block-system-main-block form .form-wrapper .form-type-search input {
+    font-size: 20px;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  .path-search .block-system-main-block form .details-wrapper fieldset {
+    text-align: left;
+  }
+  .path-search .block-system-main-block form .details-wrapper fieldset#edit-keywords-fieldset div > div {
+    width: 200px;
+    box-sizing: border-box;
+  }
+  .path-search .block-system-main-block form .details-wrapper fieldset#edit-keywords-fieldset div > div input {
+    width: 200px;
+    box-sizing: border-box;
+  }
+  .path-search .block-system-main-block h2 {
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .path-search .block-system-main-block h2:before, .path-search .block-system-main-block h2:after {
+    content: "";
+    position: relative;
+    top: 50%;
+    width: 30px;
+    height: 1px;
+    background-color: #D5D5D5;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .path-search .block-system-main-block h2:before {
+    margin-right: 10px;
+  }
+  .path-search .block-system-main-block h2:after {
+    margin-left: 10px;
+  }
+  .path-search .block-system-main-block .item-list h3 {
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .path-search .block-system-main-block .item-list h3:before, .path-search .block-system-main-block .item-list h3:after {
+    content: "";
+    position: relative;
+    top: 50%;
+    width: 60px;
+    height: 1px;
+    background-color: #D5D5D5;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .path-search .block-system-main-block .item-list h3:before {
+    margin-right: 10px;
+  }
+  .path-search .block-system-main-block .item-list h3:after {
+    margin-left: 10px;
+  }
+}
+
+/*# sourceMappingURL=search.css.map */
