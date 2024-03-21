@@ -4,9 +4,15 @@
   width: 100%;
   z-index: 300;
 }
+.path-frontpage header .region-primary-menu {
+  margin-bottom: 0;
+}
 
 header p {
   margin-bottom: 0;
+}
+header .region-primary-menu {
+  margin-bottom: 20px;
 }
 header #block-exam-theme-menunavigation {
   width: 100%;

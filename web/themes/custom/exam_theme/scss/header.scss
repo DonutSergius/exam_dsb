@@ -9,12 +9,19 @@
       width: 100%;
       z-index: 300;
     }
+    .region-primary-menu{
+      margin-bottom: 0;
+    }
+
   }
 }
 
 header {
   p {
     margin-bottom: 0;
+  }
+  .region-primary-menu{
+    margin-bottom: 20px;
   }
 
   #block-exam-theme-menunavigation {

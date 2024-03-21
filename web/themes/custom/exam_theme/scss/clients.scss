@@ -34,6 +34,7 @@
           width: calc(($smallDesktop / 2) - 80px);
         }
       }
+      margin-bottom: 80px;
     }
   }
 }
@@ -49,10 +50,11 @@
       }
       .view-content{
         img{
-          width:100px;
+          width:10scs0px;
           height: auto;
         }
       }
+      margin-bottom: 40px;
     }
     &clients-block-block-2{
       .view-content{
@@ -80,6 +82,7 @@
           height: auto;
         }
       }
+      margin-bottom: 20px;
     }
     &clients-block-block-2{
       .view-content{
