@@ -14,7 +14,7 @@ footer .region-footer .layout--twocol-section {
 footer .region-footer .layout--twocol-section .layout__region--first p {
   margin-bottom: 0;
 }
-footer .region-footer .layout--twocol-section .layout__region--first .field--name-field-title {
+footer .region-footer .layout--twocol-section .layout__region--first .field--name-field-title a {
   font-size: 32px;
   font-weight: 500;
   color: #6E9BCA;
@@ -55,7 +55,7 @@ footer .region-footer .layout--twocol-section .layout__region--second {
   footer .region-footer .layout--twocol-section .layout__region--first p {
     margin-bottom: 0;
   }
-  footer .region-footer .layout--twocol-section .layout__region--first .field--name-field-title {
+  footer .region-footer .layout--twocol-section .layout__region--first .field--name-field-title a {
     font-size: 22px;
     font-weight: 500;
     color: #6E9BCA;

@@ -10,6 +10,7 @@
 
       .layout__region--content {
         padding: 0 20px;
+        text-transform: uppercase;
 
         .block-field-blocknodeservices, .block-field-blocknodeprojects, .block-field-blocknodeclients {
           &-nodefield-images {
@@ -133,7 +134,7 @@
 
               &body, &field-contents {
                 p {
-                  color: $titleColor;
+                  color: black;
                 }
               }
             }

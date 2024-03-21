@@ -1,0 +1,70 @@
+@import "variable";
+@import "mixin";
+
+.profile, .user-login-form {
+  width: max-content;
+  margin: 0 auto;
+  text-align: left;
+
+  .form-submit {
+    color: white;
+    background-color: $titleColor;
+    padding: 20px 0;
+    width: 300px;
+    border: none;
+
+    &:hover {
+      background-color: $footerColor;
+    }
+  }
+}
+
+.path-user {
+  .block-system-main-block {
+    text-align: center;
+  }
+}
+
+.primary {
+  width: $desktop;
+  margin: 0 auto !important;
+}
+
+@media (max-width: $desktop) {
+  .primary {
+    width: $smallDesktop;
+  }
+}
+
+@media (max-width: $smallDesktop) {
+  .user-login-form {
+    input {
+      width: 300px;
+    }
+  }
+
+  .primary {
+    width: $table;
+  }
+}
+
+@media (max-width: $table) {
+  .user-login-form {
+    input {
+      width: 200px;
+    }
+
+    .description {
+      max-width: $phone;
+    }
+
+    .form-submit {
+      width: 100%;
+    }
+  }
+
+
+  .primary {
+    width: $phone;
+  }
+}

@@ -26,8 +26,18 @@
         &:last-child {
           margin-right: 0;
         }
-        .block-field-blocknodeteam-nodetitle{
-          margin-top: 20px;
+        .block-field-blocknodeteam-node{
+          &title{
+            margin-top: 20px;
+          }
+          &field-team-image{
+            img{
+              filter: grayscale(100%);
+              &:hover{
+                filter: none;
+              }
+            }
+          }
         }
         .field--name {
           &-title {
@@ -76,9 +86,6 @@
               display: flex;
               align-items: center;
               justify-content: center;
-              .rating-option-result{
-                display: none;
-              }
             }
           }
           margin-bottom: 20px;

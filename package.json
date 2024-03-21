@@ -1,0 +1,22 @@
+{
+  "name": "exam",
+  "version": "1.0.0",
+  "description": "This is a sample Drupal 10 with Composer installation pre-configured for use with Docksal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonutSergius/exam_dsb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DonutSergius/exam_dsb/issues"
+  },
+  "homepage": "https://github.com/DonutSergius/exam_dsb#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

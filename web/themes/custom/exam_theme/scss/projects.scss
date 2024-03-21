@@ -7,7 +7,6 @@
       @include textFormat(28px, 300, $footerColor);
       @include titleBlock(20px, 2px, $desktop, 66px, $gray);
     }
-
     .view-content {
       display: flex;
       flex-wrap: wrap;

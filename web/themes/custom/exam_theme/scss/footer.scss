@@ -15,16 +15,23 @@ footer {
       align-items: center;
 
       .layout__region {
-        &--first{
-          p{ margin-bottom: 0; }
-          .field--name-field-title{
-            @include textFormat(32px, 500, $titleColor);
+        &--first {
+          p {
+            margin-bottom: 0;
           }
-          .field--name-body{
+
+          .field--name-field-title {
+            a {
+              @include textFormat(32px, 500, $titleColor);
+            }
+          }
+
+          .field--name-body {
             @include textFormat(14px, 400, white);
             height: max-content;
           }
         }
+
         &--second {
           text-align: right;
         }
@@ -33,41 +40,50 @@ footer {
   }
 }
 
-@media (max-width: $desktop){
-    footer{
-      .region-footer{
-        padding: 10px;
-        width: $smallDesktop;
-      }
+@media (max-width: $desktop) {
+  footer {
+    .region-footer {
+      padding: 10px;
+      width: $smallDesktop;
     }
+  }
 }
 
-@media (max-width: $smallDesktop){
-  footer{
-    .region-footer{
+@media (max-width: $smallDesktop) {
+  footer {
+    .region-footer {
       padding: 10px;
       width: $table;
-      .layout--twocol-section{
+
+      .layout--twocol-section {
         height: 100px;
       }
     }
   }
 }
 
-@media (max-width: $table){
-  footer{
-    .region-footer{
+@media (max-width: $table) {
+  footer {
+    .region-footer {
       padding: 10px;
       width: $phone;
-      .layout--twocol-section{
+
+      .layout--twocol-section {
         height: 100px;
+
         .layout__region {
-          &--first{
-            p{ margin-bottom: 0; }
-            .field--name-field-title{
-              @include textFormat(22px, 500, $titleColor);
+          &--first {
+            p {
+              margin-bottom: 0;
             }
-            .field--name-body{
+
+            .field--name-field-title {
+              a {
+                @include textFormat(22px, 500, $titleColor);
+              }
+            }
+
+            .field--name-body {
               @include textFormat(10px, 400, white);
               height: max-content;
             }

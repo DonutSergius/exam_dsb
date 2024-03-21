@@ -19,6 +19,7 @@ global:
       css/about_page.css: { }
       css/node.css: { }
       css/search.css: { }
+      css/admin.css: { }
 js:
   js:
     js/menu.js: { }

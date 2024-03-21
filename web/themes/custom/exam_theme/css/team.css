@@ -47,6 +47,12 @@
 .block-views-blockour-team-block-block-1 .view-content .views-row .block-field-blocknodeteam-nodetitle, .block-views-blockour-team-block-block-2 .view-content .views-row .block-field-blocknodeteam-nodetitle {
   margin-top: 20px;
 }
+.block-views-blockour-team-block-block-1 .view-content .views-row .block-field-blocknodeteam-nodefield-team-image img, .block-views-blockour-team-block-block-2 .view-content .views-row .block-field-blocknodeteam-nodefield-team-image img {
+  filter: grayscale(100%);
+}
+.block-views-blockour-team-block-block-1 .view-content .views-row .block-field-blocknodeteam-nodefield-team-image img:hover, .block-views-blockour-team-block-block-2 .view-content .views-row .block-field-blocknodeteam-nodefield-team-image img:hover {
+  filter: none;
+}
 .block-views-blockour-team-block-block-1 .view-content .views-row .field--name-title, .block-views-blockour-team-block-block-2 .view-content .views-row .field--name-title {
   font-size: 24px;
 }

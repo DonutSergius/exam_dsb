@@ -44,20 +44,30 @@ a[href="/taxonomy/term/4"] {
   flex: 1 1 auto;
 }
 
-.like {
-  font-size: 18px;
+#rate-widget-base-form .form-item.js-form-item.form-type-radio.js-form-type-radio label {
   color: #D5D5D5;
 }
-.like:before {
+#rate-widget-base-form .form-item.js-form-item.form-type-radio.js-form-type-radio label.rate-voted {
+  color: red;
+}
+#rate-widget-base-form .form-item.js-form-item.form-type-radio.js-form-type-radio label.rate-voted:before {
+  font-family: FontAwesome;
+  content: "\f004";
+}
+#rate-widget-base-form .form-item.js-form-item.form-type-radio.js-form-type-radio label:before {
   font-family: FontAwesome;
   content: "\f08a";
 }
-.like:hover {
-  cursor: pointer;
+#rate-widget-base-form .form-item.js-form-item.form-type-radio.js-form-type-radio label:hover {
   color: red;
+  cursor: pointer;
 }
-.like:hover:before {
+#rate-widget-base-form .form-item.js-form-item.form-type-radio.js-form-type-radio label:hover:before {
+  font-family: FontAwesome;
   content: "\f004";
+}
+#rate-widget-base-form .form-item.js-form-item.form-type-radio.js-form-type-radio .rating-option-result {
+  display: none;
 }
 
 .grid-view-2-col .view-content {

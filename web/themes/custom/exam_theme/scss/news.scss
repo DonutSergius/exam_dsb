@@ -3,6 +3,7 @@
 
 .block-views-block {
   &news-block-block-1, &news-block-block-2 {
+    margin-bottom: 20px;
     width: 100%;
     h2 {
       @include textFormat(28px, bold, $footerColor);
@@ -11,6 +12,16 @@
     }
 
     .view-news-block {
+      padding-bottom: 10px;
+      .view-empty{
+        width: max-content;
+        margin: 0 auto;
+        margin-top: 10px;
+        text-align: center;
+        background-color: white;
+        padding: 15px;
+        margin-bottom: 80px;
+      }
       .view-filters {
         width: $desktop;
         margin: 0 auto 0 auto;

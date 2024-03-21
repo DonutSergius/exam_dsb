@@ -129,6 +129,23 @@
       }
     }
   }
+  .webform-confirmation{
+    margin-top: 50px;
+    text-align: center;
+    & div:first-child{
+      @include textFormat(24px, bold, $footerColor);
+    }
+    & div:last-child{
+      a{
+        background-color: $titleColor;
+        padding: 10px 15px;
+        color: white;
+        &:hover{
+          background-color: $color_drupal;
+        }
+      }
+    }
+  }
 }
 
 @media(max-width: $smallDesktop + 50px) {

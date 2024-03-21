@@ -50,27 +50,48 @@ a {
   flex: 1 1 auto;
 }
 
-.like{
-  font-size: 18px;
-  color: $gray;
-  &:before{
-    font-family: FontAwesome;
-    content: "\f08a";
-  }
-  &:hover{
-    cursor: pointer;
-    color: red;
-    &:before{
-      content: "\f004";
+
+.form-item.js-form-item.form-type-radio.js-form-type-radio {
+  label {
+    &.rate-voted {
+      color: red;
+
+      &:before {
+        font-family: FontAwesome;
+        content: "\f004";
+      }
     }
+
+    color: $gray;
+
+    &:before {
+      font-family: FontAwesome;
+      content: "\f08a";
+    }
+
+    &:hover {
+      color: red;
+      cursor: pointer;
+
+      &:before {
+        font-family: FontAwesome;
+        content: "\f004";
+      }
+    }
+  }
+
+  .rating-option-result {
+    display: none;
   }
 }
 
-.grid-view-2-col{
-  .view-content{
-    .field--name-title{
+
+.grid-view-2-col {
+  .view-content {
+    .field--name-title {
       text-align: center;
     }
+
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);

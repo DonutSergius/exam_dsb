@@ -97,6 +97,23 @@
 .block-system-main-block article[data-history-node-id="13"] .node__content .layout--twocol-section--50-50 .layout__region--second .field--name-field-contact-info p:last-child {
   margin-bottom: 28px;
 }
+.block-system-main-block .webform-confirmation {
+  margin-top: 50px;
+  text-align: center;
+}
+.block-system-main-block .webform-confirmation div:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  color: #373645;
+}
+.block-system-main-block .webform-confirmation div:last-child a {
+  background-color: #6E9BCA;
+  padding: 10px 15px;
+  color: white;
+}
+.block-system-main-block .webform-confirmation div:last-child a:hover {
+  background-color: #50B9E6;
+}
 
 @media (max-width: 950px) {
   .block-system-main-block article[data-history-node-id="13"] {

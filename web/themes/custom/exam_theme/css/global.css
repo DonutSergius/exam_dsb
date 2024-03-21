@@ -3,6 +3,10 @@
   width: 1220px;
 }
 
+body {
+  margin-left: 66px;
+}
+
 .social-media-links--platforms li a {
   color: #6E9BCA;
 }

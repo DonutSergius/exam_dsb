@@ -5,6 +5,7 @@
 }
 .node--services-node-full .layout__region--content, .node--projects-node-full .layout__region--content, .node--team-node-full .layout__region--content, .node--clients-node-full .layout__region--content {
   padding: 0 20px;
+  text-transform: uppercase;
 }
 .node--services-node-full .layout__region--content .block-field-blocknodeservices-nodefield-images, .node--services-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-images, .node--services-node-full .layout__region--content .block-field-blocknodeclients-nodefield-images, .node--projects-node-full .layout__region--content .block-field-blocknodeservices-nodefield-images, .node--projects-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-images, .node--projects-node-full .layout__region--content .block-field-blocknodeclients-nodefield-images, .node--team-node-full .layout__region--content .block-field-blocknodeservices-nodefield-images, .node--team-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-images, .node--team-node-full .layout__region--content .block-field-blocknodeclients-nodefield-images, .node--clients-node-full .layout__region--content .block-field-blocknodeservices-nodefield-images, .node--clients-node-full .layout__region--content .block-field-blocknodeprojects-nodefield-images, .node--clients-node-full .layout__region--content .block-field-blocknodeclients-nodefield-images {
   float: right;
@@ -101,7 +102,7 @@
   margin-bottom: 20px;
 }
 .node--news-node-full .layout--twocol-section--25-75 .layout__region--second .block-field-blocknodenews-nodebody p, .node--news-node-full .layout--twocol-section--25-75 .layout__region--second .block-field-blocknodenews-nodefield-contents p {
-  color: #6E9BCA;
+  color: black;
 }
 
 @media (max-width: 1220px) {
