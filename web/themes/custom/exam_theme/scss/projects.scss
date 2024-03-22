@@ -10,10 +10,21 @@
       @include textFormat(28px, 300, $footerColor);
       @include titleBlock(20px, 2px, $desktop, 66px, $gray);
     }
-    .view-content {
+    .views-form, .view-content {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
+      form{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .form-wrapper{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+      }
       .views-row {
         text-align: center;
         max-width: 280px;
