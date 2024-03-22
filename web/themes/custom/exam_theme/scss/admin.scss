@@ -1,6 +1,9 @@
 @import "variable";
 @import "mixin";
 
+//login, profile, primary link style
+
+//profile user style | login form style
 .profile, .user-login-form {
   width: max-content;
   margin: 0 auto;
@@ -24,7 +27,7 @@
     text-align: center;
   }
 }
-
+// admin primary menu style
 .primary {
   width: $desktop;
   margin: 0 auto !important;

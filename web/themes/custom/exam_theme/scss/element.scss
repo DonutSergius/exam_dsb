@@ -20,20 +20,21 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
   margin-top: 0;
 }
 
+// taxonomy term color
 a {
-  &[href="/taxonomy/term/1"] {
+  &[href="/services/web-development-0"] {
     color: $color_web;
   }
 
-  &[href="/taxonomy/term/2"] {
+  &[href="/services/php-development-0"] {
     color: $color_php;
   }
 
-  &[href="/taxonomy/term/3"] {
+  &[href="/services/app-development-0"] {
     color: $color_app;
   }
 
-  &[href="/taxonomy/term/4"] {
+  &[href="/services/drupal-development-0"] {
     color: $color_drupal;
   }
 
@@ -50,7 +51,7 @@ a {
   flex: 1 1 auto;
 }
 
-
+// like style
 .form-item.js-form-item.form-type-radio.js-form-type-radio {
   label {
     &.rate-voted {

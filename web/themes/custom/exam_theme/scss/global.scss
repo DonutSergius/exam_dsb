@@ -6,11 +6,7 @@
   margin: 0 auto;
   width: $desktop;
 }
-
-body{
-  margin-left: 66px;
-}
-
+// social link style
 .social-media-links--platforms {
   li {
     a {
@@ -26,7 +22,7 @@ body{
     }
   }
 }
-
+// link to content button style
 .views-field {
   &-view-node {
     @include centerElem;
@@ -46,7 +42,7 @@ body{
     }
   }
 }
-
+// pager style
 .pager {
   margin: 50px 0;
   ul {
@@ -70,6 +66,35 @@ body{
   &services-block-block-2, &projects-block-block-2, &our-team-block-block-2,
   &news-block-block-2, &clients-block-block-2 {
     margin-top: 15px;
+  }
+}
+
+// taxonomy term page
+.view-taxonomy-term{
+  .view-header{
+    @include textFormat(28px, bold, $footerColor);
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    display: inline-block;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background-color: $gray;
+      display: block;
+      bottom: 0;
+    }
+  }
+  .view-content{
+    margin-bottom: 75px;
   }
 }
 
@@ -110,6 +135,12 @@ body{
       }
     }
   }
+
+  .view-taxonomy-term{
+    .view-header{
+      @include textFormat(24px, bold, $footerColor);
+    }
+  }
 }
 
 @media (max-width: $smallDesktop) {
@@ -146,6 +177,12 @@ body{
       }
     }
   }
+
+  .view-taxonomy-term{
+    .view-header{
+      @include textFormat(24px, bold, $footerColor);
+    }
+  }
 }
 
 @media (max-width: $table) {
@@ -180,6 +217,11 @@ body{
           font-size: 10px;
         }
       }
+    }
+  }
+  .view-taxonomy-term{
+    .view-header{
+      @include textFormat(20px, bold, $footerColor);
     }
   }
 }

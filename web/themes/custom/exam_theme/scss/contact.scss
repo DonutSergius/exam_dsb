@@ -1,6 +1,7 @@
 @import "variable";
 @import "mixin";
 
+//contact style
 
 .block-system-main-block {
 
@@ -8,11 +9,12 @@
     max-width: $desktop;
     margin: 0 auto;
     .node__content {
+      margin-bottom: 75px;
       .layout-- {
         &onecol {
           .block-field-blocknodepagetitle {
             text-align: center;
-
+            // title page
             .field--name-title {
               @include textFormat($font_page_title, bold, black);
               text-transform: uppercase;
@@ -43,6 +45,7 @@
           margin: 0 auto;
 
           .layout__region- {
+            // feedback form style
             &-first {
               margin-right: 20px;
 
@@ -53,6 +56,7 @@
                   max-width: max-content;
 
                   & > div {
+                    // input style
                     input {
                       padding: 10px;
                       width: 462px;
@@ -65,7 +69,7 @@
                       width: 462px;
                       margin-bottom: 15px;
                     }
-
+                    // button style
                     .form-submit {
                       text-transform: uppercase;
                       max-width: 190px;
@@ -84,10 +88,11 @@
               }
             }
 
+            // address and map style
             &-second {
               font-size: 14px;
               line-height: 24px;
-
+              // address lines style
               .block-inline-blockoffice-addres {
                 h2 {
                   text-transform: uppercase;
@@ -117,7 +122,6 @@
                   }
                 }
               }
-
               .field--name-field-contact-info {
                 p:last-child {
                   margin-bottom: 28px;

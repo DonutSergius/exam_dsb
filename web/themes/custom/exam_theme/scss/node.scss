@@ -1,7 +1,10 @@
 @import "variable";
 @import "mixin";
 
+//node style
+
 .node-- {
+  //services, projects, clients style
   &services-node-, &projects-node-, &team-node-, &clients-node- {
     &full {
       max-width: $desktop;
@@ -13,6 +16,7 @@
         text-transform: uppercase;
 
         .block-field-blocknodeservices, .block-field-blocknodeprojects, .block-field-blocknodeclients {
+          // image style
           &-nodefield-images {
             float: right;
 
@@ -23,12 +27,12 @@
               height: auto;
             }
           }
-
+          // title block style
           &-nodetitle {
             @include textFormat($font_elem, bold, black);
             margin-bottom: 70px;
           }
-
+          // content style
           &-nodebody, &-nodefield-contents {
             font-size: $font_elem;
           }
@@ -37,8 +41,9 @@
             font-size: 26px;
           }
         }
-
+        // team field
         .block-field-blocknodeteam {
+          // image style
           &-nodefield-team-image {
             float: left;
             width: max-content;
@@ -52,16 +57,16 @@
               border-radius: 20px;
             }
           }
-
+          // team name style
           &-nodefield-name, {
             float: left;
             margin-right: 15px;
           }
-
+          // subject style
           &-nodefield-position {
             height: 50px;
           }
-
+          // social links style
           &-nodefield-social-links {
             width: max-content;
             margin-left: 70px;
@@ -83,7 +88,7 @@
       }
     }
   }
-
+  // news node
   &news-node- {
     &full {
       max-width: $desktop;
@@ -101,6 +106,7 @@
             flex-wrap: wrap;
 
             .block-field-blocknodenews-nodefield {
+              // date style
               &-date-create {
                 width: 100%;
                 height: max-content;
@@ -108,12 +114,12 @@
                 text-transform: uppercase;
                 @include textFormat($font_elem, bold, black);
               }
-
+              // image style
               &-team-image {
                 width: 100%;
                 text-align: center;
               }
-
+              // name and position style
               &-name, &-position {
                 height: max-content;
                 width: max-content;
@@ -127,11 +133,12 @@
             flex: 1;
 
             .block-field-blocknodenews-node {
+              // title news style
               &title {
                 @include textFormat($font_elem, bold, black);
                 margin-bottom: 20px;
               }
-
+              //content style
               &body, &field-contents {
                 p {
                   color: black;

@@ -1,6 +1,8 @@
 @import "variable";
 @import "mixin";
 
+//header style
+
 .path-frontpage {
   header {
     #block-exam-theme-menunavigation {
@@ -90,7 +92,7 @@ header {
 
         ul {
           text-transform: uppercase;
-
+          // first element -> home image
           li:first-child {
             align-items: center;
             width: 28px;
@@ -182,6 +184,7 @@ header {
         }
 
         input {
+          // search button
           &.form-submit {
             width: 38px;
             height: 38px;

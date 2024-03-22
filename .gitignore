@@ -21,3 +21,9 @@
 
 # Ignore .env files as they are personal
 /.env
+
+# Ignore Gulp 
+/web/themes/custom/exam_theme/node_modules
+/web/themes/custom/exam_theme/package.json
+/web/themes/custom/exam_theme/package-lock.json
+/web/themes/custom/exam_theme/gulpfile.js

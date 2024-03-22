@@ -1,6 +1,8 @@
 @import "variable";
 @import "mixin";
 
+//about page style
+
 .block-system-main-block {
   article[data-history-node-id="5"] {
     max-width: $desktop;
@@ -9,12 +11,14 @@
         .layout-- {
           &onecol {
             .block-field-block{
+              // style title
               &nodepagetitle{
                 span{
                   @include textFormat($font_page_title, bold, black);
                   @include titleBlock(50px, 20px, $desktop, 63px, $gray);
                 }
               }
+              //style body text
             &nodepagebody {
               @include textFormat($font_page_title, 400, black);
             }
@@ -25,7 +29,7 @@
     }
   }
 }
-
+// style small desktop
 @media (max-width: $desktop) {
   .block-system-main-block {
     article[data-history-node-id="5"] {
@@ -45,7 +49,7 @@
     }
   }
 }
-
+// style table
 @media (max-width: $smallDesktop) {
   .block-system-main-block {
     article[data-history-node-id="5"] {
@@ -71,7 +75,7 @@
     }
   }
 }
-
+// style phone
 @media (max-width: $table) {
   .block-system-main-block {
     article[data-history-node-id="5"] {

@@ -1,6 +1,8 @@
 @import "variable";
 @import "mixin";
 
+//team style
+
 .block-views-block {
   &our-team-block-block-1, &our-team-block-block-2 {
     h2 {
@@ -27,18 +29,23 @@
           margin-right: 0;
         }
         .block-field-blocknodeteam-node{
+          // title style
           &title{
             margin-top: 20px;
           }
+          // image style
           &field-team-image{
+            // black-white image
             img{
               filter: grayscale(100%);
+              // color image
               &:hover{
                 filter: none;
               }
             }
           }
         }
+        // name field
         .field--name {
           &-title {
             font-size: $font_page_title;
@@ -77,11 +84,13 @@
         .layout--twocol-section--67-33{
           margin-top: 20px;
           .layout__region{
+            // social link style
             &--first{
               display: flex;
               align-items: center;
               justify-content: center;
             }
+            // like style
             &--second{
               display: flex;
               align-items: center;
@@ -94,6 +103,9 @@
     }
 
     margin-bottom: 150px;
+  }
+  &our-team-block-block-2{
+    margin-bottom: 75px;
   }
 }
 

@@ -1,6 +1,8 @@
 @import "variable";
 @import "mixin";
 
+//clients style
+
 .block-views-block {
   &clients-block-block-1, &clients-block-block-2 {
     h2 {
@@ -9,6 +11,7 @@
     }
     margin-bottom: 120px;
   }
+  // style to clients page
   &clients-block-block-2{
     .view-content{
       .views-row{

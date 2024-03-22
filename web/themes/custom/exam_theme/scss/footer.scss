@@ -1,6 +1,8 @@
 @import "variable";
 @import "mixin";
 
+//footer style
+
 footer {
   margin-top: 20px;
   background-color: $footerColor;
@@ -19,7 +21,7 @@ footer {
           p {
             margin-bottom: 0;
           }
-
+          // name company style
           .field--name-field-title {
             a {
               @include textFormat(32px, 500, $titleColor);

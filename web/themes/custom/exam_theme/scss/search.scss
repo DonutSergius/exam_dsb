@@ -1,11 +1,13 @@
 @import "variable";
 @import "mixin";
 
+//serach page style
+
 .path-search {
   .block-system-main-block {
     width: $desktop;
     margin: 0 auto;
-
+    // search form style
     form {
       .form-wrapper {
         .form-type-search {
@@ -18,7 +20,7 @@
             padding: 10px;
           }
         }
-
+        // search button
         .form-submit {
           color: $white;
           padding: 10px 15px;
@@ -47,7 +49,7 @@
         @include titleBlock(30px, 10px, $smallDesktop, 28px, $gray);
       }
     }
-
+    // search result style
     .item-list {
       .node_search-results {
         padding: 0;

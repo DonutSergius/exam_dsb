@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/DonutSergius/exam_dsb#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
   }
 }

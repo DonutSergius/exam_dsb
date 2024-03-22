@@ -1,5 +1,8 @@
 @import "variable";
 @import "mixin";
+
+//projects style
+
 .block-views-block {
   &projects-block-block-1, &projects-block-block-2{
     h2 {
@@ -38,7 +41,7 @@
               color: black;
             }
           }
-
+          // services term style
           &-field-service-term {
             margin-bottom: 10px;
           }

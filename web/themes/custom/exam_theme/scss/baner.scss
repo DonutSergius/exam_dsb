@@ -1,6 +1,8 @@
 @import "variable";
 @import "mixin";
 
+//baner style
+
 header {
   width: 100%;
 
@@ -11,6 +13,7 @@ header {
     width: 100%;
 
     .field--name {
+      // slogan text style
       &-body {
         position: absolute;
         z-index: 300;
@@ -40,7 +43,7 @@ header {
           letter-spacing: -0.5px;
         }
       }
-
+      // baner background image
       &-field-title-image {
         img{
           width: 100%;
@@ -143,6 +146,7 @@ header {
             letter-spacing: -0.5px;
           }
         }
+        // static height to baner image
         &-field-title-image {
           img{
             width: 600px;

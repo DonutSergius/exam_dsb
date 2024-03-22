@@ -1,6 +1,8 @@
 @import "variable";
 @import "mixin";
 
+// services style
+
 .block-views-block {
   &services-block-block-1, &services-block-block-2 {
     h2 {
@@ -19,11 +21,11 @@
 
         .views-field {
           text-transform: uppercase;
-
+          // image style
           &-field-images {
             margin-bottom: 30px;
           }
-
+          // title style
           &-title {
             margin-bottom: 10px;
 
@@ -31,7 +33,7 @@
               color: black;
             }
           }
-
+          // body style
           &-body {
             @include textFormat($fontS, 400, $gray);
             line-height: 12px;
@@ -46,7 +48,7 @@
   }
 }
 
-
+// services on taxonomy term page
 .view-taxonomy-term{
   .view-content {
     display: flex;
