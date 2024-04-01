@@ -1,0 +1,407 @@
+@import "../variable";
+@import "../mixin";
+
+//node style
+
+.node-- {
+  //services, projects, clients style
+  &services-node-, &projects-node-, &team-node-, &clients-node- {
+    &full {
+      max-width: $desktop;
+      margin: 0 auto;
+      margin-top: 50px;
+
+      .layout__region--content {
+        padding: 0 20px;
+        text-transform: uppercase;
+
+        .block-field-blocknodeservices, .block-field-blocknodeprojects, .block-field-blocknodeclients {
+          // image style
+          &-nodefield-images {
+            float: right;
+
+            img {
+              margin: 50px;
+              margin-top: 0;
+              width: 300px;
+              height: auto;
+            }
+          }
+          // title block style
+          &-nodetitle {
+            @include textFormat($font_elem, bold, black);
+            margin-bottom: 70px;
+          }
+          // content style
+          &-nodebody, &-nodefield-contents {
+            font-size: $font_elem;
+          }
+
+          &-nodefield-service-term {
+            font-size: 26px;
+          }
+        }
+        // team field
+        .block-field-blocknodeteam {
+          // image style
+          &-nodefield-team-image {
+            float: left;
+            width: max-content;
+
+            img {
+              padding: 0 30px 30px 30px;
+              margin: 0 20px 20px 20px;
+              width: 300px;
+              height: auto;
+              border: 1px solid $gray;
+              border-radius: 20px;
+            }
+          }
+          // team name style
+          &-nodefield-name, {
+            float: left;
+            margin-right: 15px;
+          }
+          // subject style
+          &-nodefield-position {
+            height: 50px;
+          }
+          // social links style
+          &-nodefield-social-links {
+            width: max-content;
+            margin-left: 70px;
+            float: left;
+          }
+        }
+
+        .block-extra-field-blocknodeteam-noderate-testlike {
+          .like {
+            margin-left: 10px;
+            font-size: 24px;
+          }
+        }
+
+        .block-field-blocknodeclients-nodefield-name{
+          font-size: 40px;
+          height: 80px
+        }
+      }
+    }
+  }
+  // news node
+  &news-node- {
+    &full {
+      max-width: $desktop;
+      margin: 0 auto;
+      margin-top: 50px;
+
+      .layout--twocol-section--25-75 {
+        .layout__region {
+          &--first {
+            flex: 0 1 22%;
+            margin-right: 30px;
+            border-right: 1px solid $gray;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            .block-field-blocknodenews-nodefield {
+              // date style
+              &-date-create {
+                width: 100%;
+                height: max-content;
+                text-align: center;
+                text-transform: uppercase;
+                @include textFormat($font_elem, bold, black);
+              }
+              // image style
+              &-team-image {
+                width: 100%;
+                text-align: center;
+              }
+              // name and position style
+              &-name, &-position {
+                height: max-content;
+                width: max-content;
+                margin-left: 22px;
+                margin-bottom: 15px;
+              }
+            }
+          }
+
+          &--second {
+            flex: 1;
+
+            .block-field-blocknodenews-node {
+              // title news style
+              &title {
+                @include textFormat($font_elem, bold, black);
+                margin-bottom: 20px;
+              }
+              //content style
+              &body, &field-contents {
+                p {
+                  color: black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .node-- {
+    &services-node-, &projects-node-, &team-node-, &clients-node- {
+      &full {
+        width: $smallDesktop;
+        margin: 0 auto;
+
+        .layout__region--content {
+          .block-field-blocknodeservices, .block-field-blocknodeprojects, .block-field-blocknodeclients {
+            &-nodefield-images {
+              img {
+                margin: 30px;
+                width: 200px;
+              }
+            }
+
+            &-nodetitle {
+              @include textFormat(28px, bold, black);
+              margin-bottom: 50px;
+            }
+
+            &-nodebody, &-nodefield-contents, &-nodefield-service-term {
+              font-size: 22px;
+            }
+          }
+
+          .block-field-blocknodeteam {
+            &-nodefield-social-links {
+              width: max-content;
+              margin: 0 auto;
+              float: left;
+            }
+
+          }
+
+          .block-extra-field-blocknodeteam-noderate-testlike {
+            form {
+              table {
+                margin-left: auto;
+              }
+            }
+
+            .like {
+              font-size: 20px;
+            }
+          }
+          .block-field-blocknodeclients-nodefield-name{
+            font-size: 36px;
+            height: 60px
+          }
+        }
+      }
+    }
+
+    &news-node- {
+      &full {
+        max-width: $smallDesktop;
+
+        .layout--twocol-section--25-75 {
+          .layout__region {
+            &--first {
+              .block-field-blocknodenews-nodefield {
+                &-date-create {
+                  @include textFormat($font_page_title, bold, black);
+                }
+
+                &-team-image {
+                  img {
+                    width: 150px;
+                    height: auto;
+                  }
+
+                  height: max-content;
+                }
+              }
+            }
+
+            &--second {
+              flex: 1;
+
+              .block-field-blocknodenews-node {
+                &title {
+                  @include textFormat(28px, bold, black);
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $smallDesktop) {
+  .node-- {
+    &services-node-, &projects-node-, &team-node-, &clients-node-  {
+      &full {
+        width: $table;
+
+        .layout__region--content {
+          .block-field-blocknodeservices, .block-field-blocknodeprojects, .block-field-blocknodeclients {
+            &-nodefield-images {
+              img {
+                margin: 20px;
+                width: 150px;
+              }
+            }
+
+            &-nodetitle {
+              @include textFormat($font_page_title, bold, black);
+              margin-bottom: 20px;
+            }
+
+            &-nodebody, &-nodefield-contents, &-nodefield-service-term {
+              font-size: 20px;
+            }
+          }
+          .block-field-blocknodeclients-nodefield-name{
+            font-size: 32px;
+            height: 60px
+          }
+        }
+      }
+    }
+
+    &news-node- {
+      &full {
+        max-width: $table;
+
+        .layout--twocol-section--25-75 {
+          .layout__region {
+            &--first {
+              flex: 100%;
+              margin: 0;
+              border: none;
+              flex-direction: initial;
+
+              .block-field-blocknodenews-nodefield {
+                &-name {
+                  margin-left: auto;
+                }
+
+                &-position {
+                  margin-right: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $table) {
+  .node-- {
+    &services-node-, &projects-node-, &team-node-, &clients-node-  {
+      &full {
+        width: $phone;
+
+        .layout__region--content {
+          .block-field-blocknodeservices, .block-field-blocknodeprojects, .block-field-blocknodeclients {
+            &-nodefield-images {
+              img {
+                margin: 10px;
+                width: 70px;
+              }
+            }
+
+            &-nodetitle {
+              @include textFormat(22px, bold, black);
+              margin-bottom: 20px;
+            }
+
+            &-nodebody, &-nodefield-contents, &-nodefield-service-term {
+              font-size: 16px;
+            }
+          }
+
+          .block-field-blocknodeteam {
+
+            &-nodefield-team-image {
+              float: none;
+              width: max-content;
+
+              img {
+                padding: 0 10px 10px 10px;
+                margin: 0 10px 10px 10px;
+                width: 240px;
+                height: auto;
+                border: 1px solid $gray;
+                border-radius: 20px;
+              }
+            }
+
+            &-nodefield-name, {
+              float: left;
+              margin-right: 15px;
+            }
+
+            &-nodefield-position {
+              height: 50px;
+            }
+          }
+          .block-field-blocknodeclients-nodefield-name{
+            font-size: 28px;
+            height: 40px
+          }
+        }
+      }
+    }
+
+    &news-node- {
+      &full {
+        max-width: $phone;
+
+        .layout--twocol-section--25-75 {
+          .layout__region {
+            &--first {
+              flex: 100%;
+              margin: 0;
+              border: none;
+              flex-direction: initial;
+
+              .block-field-blocknodenews-nodefield {
+                &-name {
+                  margin-left: auto;
+                }
+
+                &-position {
+                  margin-right: auto;
+                }
+              }
+            }
+            &--second{
+              .block-field-blocknodenews-node{
+                &title{
+                  font-size: 20px;
+                }
+                &body{
+                  p{
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

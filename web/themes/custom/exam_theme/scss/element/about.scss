@@ -1,0 +1,112 @@
+@import "../variable";
+@import "../mixin";
+
+//Homepage teaser about
+
+.block-views-blockabout-block-block-1 {
+  .about {
+
+    .view-content {
+      @include centerElem;
+      height: 260px;
+
+      .views-row {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        text-transform: uppercase;
+        padding: 15px 0;
+        border-top: 5px solid $footerColor;
+        border-bottom: 5px solid $titleColor;
+
+        .views-field {
+          // title field
+          &-title {
+            @include centerElem;
+            font-size: 30px;
+
+            a {
+              color: black;
+              font-weight: bold;
+            }
+          }
+          // teaser body field
+          &-body {
+            @include textFormat(20px, 400, $gray);
+            @include centerElem;
+            letter-spacing: -0.5px;
+          }
+        }
+      }
+    }
+  }
+}
+// small desktop style
+@media (max-width: $desktop) {
+  .block-views-blockabout-block-block-1 {
+    .about {
+      .view-content {
+        height: 200px;
+        .views-field-title {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+// table style
+@media (max-width: $smallDesktop) {
+  .block-views-blockabout-block-block-1 {
+    .about {
+      .view-content {
+        height: max-content;
+        margin: 15px auto;
+
+        .views-row {
+          .views-field {
+            &-title {
+              margin-right: 10px;
+              font-size: 24px;
+            }
+
+            &-body {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// phone style
+@media (max-width: $table) {
+  .block-views-blockabout-block-block-1 {
+    .about {
+      .view-content {
+        height: max-content;
+        margin: 15px auto;
+
+        .views-row {
+          flex-wrap: wrap;
+          .views-field {
+            &-title {
+              width: 100%;
+              margin-right: 10px;
+              font-size: 22px;
+              span{
+                margin: 0 auto;
+              }
+            }
+
+            &-body {
+              width:65%;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

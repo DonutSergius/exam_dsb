@@ -1,0 +1,37 @@
+uuid: a28d4429-0c9f-49cf-a65f-f4bcf3cbe8c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.clients_node.body
+    - field.field.node.clients_node.field_contents
+    - field.field.node.clients_node.field_images
+    - field.field.node.clients_node.field_name
+    - image.style.medium
+    - node.type.clients_node
+  module:
+    - media
+    - user
+id: node.clients_node.teaser
+targetEntityType: node
+bundle: clients_node
+mode: teaser
+content:
+  field_images:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_contents: true
+  field_name: true
+  links: true
+  search_api_excerpt: true

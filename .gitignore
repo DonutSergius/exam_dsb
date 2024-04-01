@@ -11,7 +11,15 @@
 /web/sites/*/settings.local.php
 
 # Ignore Drupal's file directory
-/web/sites/*/files/
+/web/sites/*/files/2024-03
+/web/sites/*/files/inline-images
+/web/sites/*/files/media-icons
+/web/sites/*/files/php
+/web/sites/*/files/styles
+/web/sites/*/files/.htaccess
+
+# Ignore settings.php
+/web/sites/default/settings.php
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
@@ -22,7 +30,7 @@
 # Ignore .env files as they are personal
 /.env
 
-# Ignore Gulp 
+# Ignore Gulp
 /web/themes/custom/exam_theme/node_modules
 /web/themes/custom/exam_theme/package.json
 /web/themes/custom/exam_theme/package-lock.json

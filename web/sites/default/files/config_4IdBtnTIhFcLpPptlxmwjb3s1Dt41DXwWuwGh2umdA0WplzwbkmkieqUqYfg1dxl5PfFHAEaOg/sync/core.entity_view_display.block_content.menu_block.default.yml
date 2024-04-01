@@ -1,0 +1,114 @@
+uuid: 7a260d46-1f39-4b90-80ae-ee83c847b7b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.menu_block
+    - block_content.type.title_block
+    - field.field.block_content.menu_block.field_main_social_link
+    - system.menu.main
+  module:
+    - layout_builder
+    - layout_discovery
+    - search
+    - social_media_links_field
+    - system
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          c8cd2c61-1241-49ce-867a-cdfa7df7fa4e:
+            uuid: c8cd2c61-1241-49ce-867a-cdfa7df7fa4e
+            region: content
+            configuration:
+              id: 'field_block:block_content:menu_block:field_main_social_link'
+              label: 'Main Social Link'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: social_media_links_field_default
+                label: hidden
+                settings:
+                  appearance:
+                    orientation: h
+                    show_name: 0
+                  link_attributes:
+                    target: _blank
+                    rel: '<none>'
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          bd8de4d9-5c99-4232-9818-2673c315864a:
+            uuid: bd8de4d9-5c99-4232-9818-2673c315864a
+            region: content
+            configuration:
+              id: 'system_menu_block:main'
+              label: 'Main navigation'
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+              level: 1
+              depth: 0
+              expand_all_items: false
+            weight: 4
+            additional: {  }
+          938e94b9-401d-4d8c-a723-77d1acba7a36:
+            uuid: 938e94b9-401d-4d8c-a723-77d1acba7a36
+            region: content
+            configuration:
+              id: search_form_block
+              label: 'Search form'
+              label_display: '0'
+              provider: search
+              context_mapping: {  }
+              page_id: ''
+            weight: 6
+            additional: {  }
+          100176d8-d755-4982-8f1c-355b449e91e9:
+            uuid: 100176d8-d755-4982-8f1c-355b449e91e9
+            region: content
+            configuration:
+              id: 'inline_block:title_block'
+              label: 'Menu Text'
+              label_display: '0'
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 28
+              block_serialized: null
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.menu_block.default
+targetEntityType: block_content
+bundle: menu_block
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_main_social_link:
+    type: social_media_links_field_default
+    label: hidden
+    settings:
+      appearance: {  }
+      link_attributes: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_title: true
+  search_api_excerpt: true

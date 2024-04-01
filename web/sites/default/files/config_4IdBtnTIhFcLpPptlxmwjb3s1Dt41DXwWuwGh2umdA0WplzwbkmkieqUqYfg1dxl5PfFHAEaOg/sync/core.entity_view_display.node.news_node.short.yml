@@ -1,0 +1,34 @@
+uuid: bc13b9c1-e9eb-4c5e-bb82-43cb5a287421
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.short
+    - field.field.node.news_node.body
+    - field.field.node.news_node.field_contents
+    - field.field.node.news_node.field_date_create
+    - field.field.node.news_node.field_name
+    - field.field.node.news_node.field_position
+    - field.field.node.news_node.field_team_image
+    - node.type.news_node
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.news_node.short
+targetEntityType: node
+bundle: news_node
+mode: short
+content: {  }
+hidden:
+  body: true
+  field_contents: true
+  field_date_create: true
+  field_name: true
+  field_position: true
+  field_team_image: true
+  links: true
+  search_api_excerpt: true

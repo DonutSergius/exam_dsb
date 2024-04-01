@@ -1,0 +1,42 @@
+uuid: fe5cd657-69ab-4247-a07a-4cc2d70de20c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.short
+    - field.field.node.clients_node.body
+    - field.field.node.clients_node.field_contents
+    - field.field.node.clients_node.field_images
+    - field.field.node.clients_node.field_name
+    - image.style.thumbnail
+    - node.type.clients_node
+  module:
+    - layout_builder
+    - media
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.clients_node.short
+targetEntityType: node
+bundle: clients_node
+mode: short
+content:
+  field_images:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_contents: true
+  field_name: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,73 @@
+uuid: 62841799-5eb0-467c-bbf9-32ce1ce0f1a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.short
+    - field.field.node.team_node.body
+    - field.field.node.team_node.field_name
+    - field.field.node.team_node.field_position
+    - field.field.node.team_node.field_social_links
+    - field.field.node.team_node.field_team_image
+    - node.type.team_node
+  module:
+    - layout_builder
+    - social_media_links_field
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.team_node.short
+targetEntityType: node
+bundle: team_node
+mode: short
+content:
+  field_face_images:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_name:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_position:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_social_links:
+    type: social_media_links_field_default
+    label: above
+    settings:
+      appearance: {  }
+      link_attributes: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  rate_testlike:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  body: true
+  field_team_image: true
+  likes: true
+  links: true
+  rate_five: true
+  rate_five_stars: true
+  rate_like: true
+  rate_yes_or_no: true
+  search_api_excerpt: true

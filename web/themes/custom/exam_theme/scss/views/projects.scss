@@ -1,0 +1,185 @@
+@import "../variable";
+@import "../mixin";
+
+//projects style
+
+.block-views-block{
+  &projects-block-block-2{
+    h2{
+      letter-spacing: -2px;
+      @include textFormat(28px, bold, $footerColor);
+      @include titleBlock(20px, 2px, $desktop, 70px, $gray);
+      &:before, &:after{
+        width: 540px;
+      }
+    }
+  }
+}
+
+.block-views-block {
+  &projects-block-block-1 {
+    h2 {
+      letter-spacing: -2px;
+      @include textFormat(28px, 300, $footerColor);
+      @include titleBlock(20px, 2px, $desktop, 66px, $gray);
+    }
+  }
+}
+
+.block-views-block {
+  &projects-block-block-1, &projects-block-block-2{
+    .views-form, .view-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      form{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .form-wrapper{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      .views-row {
+        text-align: center;
+        max-width: 280px;
+        background-color: $white;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .views-field {
+          text-transform: uppercase;
+
+          &-field-images {
+            margin-bottom: 30px;
+          }
+
+          &-title {
+            margin-bottom: 10px;
+            @include textFormat($font_page_title, 400, $footerColor);
+            a {
+              color: black;
+            }
+          }
+          // services term style
+          &-field-service-term {
+            margin-bottom: 10px;
+          }
+          &-view-node {
+            .field-content {
+              background-color: $footerColor;
+              &:hover{
+                background-color: black;
+              }
+            }
+
+            margin-bottom: 10px;
+          }
+        }
+        margin-bottom: 20px;
+      }
+    }
+
+    margin-bottom: 75px;
+  }
+  &projects-block-block-2{
+    h2{
+      @include titleBlock(75px, 2px, $desktop, 66px, $gray);
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .block-views-block {
+    &projects-block-block-1, &projects-block-block-2{
+      h2 {
+        &:before, &:after {
+          width: calc(($smallDesktop / 2) - 66px);
+        }
+      }
+      .view-content{
+        .views-row{
+          .views-field{
+            &-field-images{
+              img{
+                width: 200px;
+                height: auto;
+              }
+            }
+            &-field-service-term{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $smallDesktop) {
+  .block-views-block {
+    &projects-block-block-1, &projects-block-block-2{
+      h2 {
+        &:before, &:after {
+          width: calc(($table / 2) - 66px);
+        }
+      }
+      .view-content{
+        .views-row{
+          max-width: 50%;
+          .views-field{
+            &-field-images{
+              img{
+                width: 280px;
+                height: auto;
+              }
+            }
+            &-field-service-term{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: $table) {
+  .block-views-block {
+    &projects-block-block-1, &projects-block-block-2{
+      h2 {
+        &:before, &:after {
+          width: calc(($phone / 2) - 66px);
+        }
+      }
+      .view-content{
+        .views-row{
+          max-width: 100%;
+          .views-field{
+            &-field-images{
+              img{
+                width: 280px;
+                height: auto;
+              }
+              margin-bottom: 15px;
+            }
+            &-field-service-term{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      margin-bottom: 20px;
+    }
+  }
+}

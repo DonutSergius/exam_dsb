@@ -1,0 +1,229 @@
+@import "../variable";
+@import "../mixin";
+
+//serach page style
+
+.path-search {
+  .block-system-main-block {
+    width: $desktop;
+    margin: 0 auto;
+    // search form style
+    form {
+      .form-wrapper {
+        .form-type-search {
+          label {
+            font-size: $font_page_title;
+          }
+
+          input {
+            font-size: 20px;
+            padding: 10px;
+          }
+        }
+        // search button
+        .form-submit {
+          color: $white;
+          padding: 10px 15px;
+          font-size: 20px;
+          background-color: $titleColor;
+          border-radius: 5px;
+          border: none;
+
+          &:hover {
+            background-color: $footerColor;
+          }
+        }
+      }
+
+      a {
+        @include textFormat(16px, 400, black);
+      }
+    }
+
+    h2 {
+      @include titleBlock(30px, 10px, $desktop, 120px, $gray);
+    }
+
+    .item-list {
+      h3 {
+        @include titleBlock(30px, 10px, $smallDesktop, 28px, $gray);
+      }
+    }
+    // search result style
+    .item-list {
+      .node_search-results {
+        padding: 0;
+
+        li {
+          border-top: 1px solid $gray;
+          border-bottom: 1px solid $gray;
+          border-radius: 10px;
+          padding: 10px;
+          margin: 5px 10px;
+
+          &:hover {
+            background-color: $gray;
+          }
+
+          h3 {
+            a {
+              @include textFormat($font_page_title, bold, $footerColor);
+            }
+
+            text-align: left;
+            white-space: normal;
+
+            &:before, &:after {
+              content: "";
+              margin: 0;
+              width: 0;
+            }
+          }
+
+          p {
+            margin-left: 10px;
+
+            strong {
+              color: $footerColor;
+            }
+
+            &.search-result__info {
+              a {
+                color: $titleColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: $desktop) {
+  .path-search {
+    .block-system-main-block {
+      width: $smallDesktop;
+
+      h2 {
+        @include titleBlock(30px, 10px, $smallDesktop, 120px, $gray);
+      }
+
+      .item-list {
+        h3 {
+          @include titleBlock(30px, 10px, $table, 34px, $gray);
+        }
+
+        .node_search-results {
+          li {
+            h3 {
+              a {
+                font-size: 20px;
+
+              }
+            }
+
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: $smallDesktop) {
+  .path-search {
+    .block-system-main-block {
+      width: $table;
+
+      h2 {
+        @include titleBlock(30px, 10px, $table, 120px, $gray);
+      }
+
+      .item-list {
+        h3 {
+          @include titleBlock(30px, 10px, $phone, 34px, $gray);
+        }
+
+        .node_search-results {
+          li {
+            h3 {
+              a {
+                font-size: 20px;
+
+              }
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: $table) {
+  .path-search {
+    .block-system-main-block {
+      width: $phone;
+
+      form {
+
+
+        .form-wrapper {
+          text-align: center;
+
+          .form-type-search {
+            text-align: center;
+
+            label {
+              font-size: 20px;
+            }
+
+            input {
+              font-size: 20px;
+              max-width: $phone;
+              box-sizing: border-box;
+              margin-bottom: 10px;
+            }
+          }
+        }
+
+        .details-wrapper {
+          fieldset {
+            text-align: left;
+            &#edit-keywords-fieldset {
+              div {
+                & > div {
+                  width: 200px;
+                  box-sizing: border-box;
+
+                  input {
+                    width: 200px;
+                    box-sizing: border-box;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      h2 {
+        @include titleBlock(30px, 10px, $phone, 120px, $gray);
+      }
+
+      .item-list {
+        h3 {
+          @include titleBlock(30px, 10px, $phone, 90px, $gray);
+        }
+      }
+    }
+
+  }
+}
+
+

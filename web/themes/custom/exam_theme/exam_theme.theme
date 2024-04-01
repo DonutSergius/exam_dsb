@@ -1,12 +1,22 @@
 <?php
-function exam_theme_preprocess_menu(&$variables)
-{
+
+/**
+ * @file
+ * This file contains theme functions for exam_theme.
+ */
+
+/**
+ * Prepares theme variables for menus.
+ */
+function exam_theme_preprocess_menu(&$variables) {
+  // Check if the menu is the main menu.
   if ($variables['menu_name'] == 'main') {
+    // Add HTML for the hamburger icon.
     $variables['hamburger_icon'] = '
-<div class="hamburger-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>';
+      <div class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>';
   }
 }

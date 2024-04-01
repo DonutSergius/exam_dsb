@@ -1,0 +1,42 @@
+uuid: 93e6445c-f918-4075-a07b-4609f508c3b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.office_addres
+    - field.field.block_content.office_addres.field_contact_info
+    - field.field.block_content.office_addres.field_office_address
+    - field.field.block_content.office_addres.field_office_map
+  module:
+    - address
+    - text
+id: block_content.office_addres.default
+targetEntityType: block_content
+bundle: office_addres
+mode: default
+content:
+  field_contact_info:
+    type: text_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_office_address:
+    type: address_default
+    weight: 0
+    region: content
+    settings:
+      wrapper_type: fieldset
+    third_party_settings: {  }
+  field_office_map:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  info: true

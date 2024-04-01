@@ -1,0 +1,227 @@
+@import "../variable";
+@import "../mixin";
+
+//team style
+
+.block-views-block {
+  &our-team-block-block-1, &our-team-block-block-2 {
+    h2 {
+      @include textFormat(28px, bold, $footerColor);
+      @include titleBlock(40px, 20px, $desktop, 95px, $gray);
+    }
+
+    .view-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      .views-row {
+        text-align: center;
+        max-width: 25%;
+        background-color: $white;
+        text-transform: uppercase;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+        .block-field-blocknodeteam-node{
+          // title style
+          &title{
+            margin-top: 20px;
+          }
+          // image style
+          &field-team-image{
+            // black-white image
+            img{
+              filter: grayscale(100%);
+              // color image
+              &:hover{
+                filter: none;
+              }
+            }
+          }
+        }
+        // name field
+        .field--name {
+          &-title {
+            font-size: $font_page_title;
+            a {
+              color: black;
+            }
+          }
+
+          &-field-position {
+            @include textFormat($fontS, 400, $gray);
+            margin-bottom: 20px;
+          }
+        }
+
+        .node__links {
+          width: max-content;
+          margin: 0 auto;
+          background-color: $footerColor;
+          padding: 8px 10px;
+          &:hover{
+            background-color: black;
+          }
+          a {
+            @include textFormat(0, 400, white);
+            font-size: 0;
+            color: white;
+            &:before {
+              content: "Look at me";
+              font-size: 16px;
+            }
+          }
+
+        }
+
+
+        .layout--twocol-section--67-33{
+          margin-top: 20px;
+          .layout__region{
+            // social link style
+            &--first{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            // like style
+            &--second{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    margin-bottom: 150px;
+  }
+  &our-team-block-block-2{
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: $desktop){
+  .block-views-block {
+    &our-team-block-block-1, &our-team-block-block-2 {
+      h2{
+        margin-bottom: 40px;
+        &:before, &:after {
+          width: calc(($smallDesktop / 2) - 98px);
+        }
+      }
+      .view-content{
+        .views-row{
+          .block-field-blocknodeteam{
+            &-nodefield-team-image{
+              img{
+                width: 200px;
+                height: auto;
+              }
+            }
+            &-nodetitle{
+              .field--name-title{
+                font-size: 20px;
+              }
+            }
+          }
+          .block-extra-field-blocknodeteam-nodelinks{
+            a {
+              &:before {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $smallDesktop){
+  .block-views-block {
+    &our-team-block-block-1, &our-team-block-block-2 {
+      h2{
+        margin-bottom: 20px;
+        &:before, &:after {
+          width: calc(($table / 2) - 98px);
+        }
+      }
+      .view-content{
+        .views-row{
+          margin-bottom: 10px;
+          max-width: 50%;
+          .block-field-blocknodeteam{
+            &-nodefield-team-image{
+              img{
+                width: 280px;
+                height: auto;
+              }
+            }
+            &-nodetitle{
+              .field--name-title{
+                font-size: 18px;
+              }
+            }
+          }
+          .block-extra-field-blocknodeteam-nodelinks{
+            a {
+              &:before {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: $table){
+  .block-views-block {
+    &our-team-block-block-1, &our-team-block-block-2 {
+      h2{
+        margin-bottom: 20px;
+        &:before, &:after {
+          width: calc(($phone / 2) - 98px);
+        }
+      }
+      .view-content{
+        .views-row{
+          margin-bottom: 10px;
+          max-width: 100%;
+          .block-field-blocknodeteam{
+            &-nodefield-team-image{
+              img{
+                width: 280px;
+                height: auto;
+              }
+            }
+            &-nodetitle{
+              .field--name-title{
+                font-size: 16px;
+              }
+            }
+          }
+          .block-extra-field-blocknodeteam-nodelinks{
+            a {
+              &:before {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      margin-bottom: 20px;
+    }
+  }
+}

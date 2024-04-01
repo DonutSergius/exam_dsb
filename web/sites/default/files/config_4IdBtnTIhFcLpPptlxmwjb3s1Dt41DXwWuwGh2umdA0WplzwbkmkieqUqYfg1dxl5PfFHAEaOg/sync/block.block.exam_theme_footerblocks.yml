@@ -1,0 +1,25 @@
+uuid: a8e59a88-0bb9-48ed-ae1a-006481eb9380
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_block:faeb60d9-4dd4-40b6-bc89-fe0d4a6257b1'
+  module:
+    - block_content
+  theme:
+    - exam_theme
+id: exam_theme_footerblocks
+theme: exam_theme
+region: footer
+weight: -5
+provider: null
+plugin: 'block_content:faeb60d9-4dd4-40b6-bc89-fe0d4a6257b1'
+settings:
+  id: 'block_content:faeb60d9-4dd4-40b6-bc89-fe0d4a6257b1'
+  label: FooterBlocks
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

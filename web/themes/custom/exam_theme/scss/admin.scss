@@ -1,8 +1,6 @@
 @import "variable";
 @import "mixin";
 
-//login, profile, primary link style
-
 //profile user style | login form style
 .profile, .user-login-form {
   width: max-content;
@@ -27,6 +25,7 @@
     text-align: center;
   }
 }
+
 // admin primary menu style
 .primary {
   width: $desktop;

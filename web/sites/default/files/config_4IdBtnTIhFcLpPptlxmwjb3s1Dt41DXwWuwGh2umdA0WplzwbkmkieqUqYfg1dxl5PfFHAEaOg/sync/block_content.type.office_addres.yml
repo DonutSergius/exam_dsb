@@ -1,0 +1,8 @@
+uuid: 252267b0-54ad-4a00-b38c-d3e9af98c927
+langcode: en
+status: true
+dependencies: {  }
+id: office_addres
+label: 'Office addres'
+revision: 0
+description: ''

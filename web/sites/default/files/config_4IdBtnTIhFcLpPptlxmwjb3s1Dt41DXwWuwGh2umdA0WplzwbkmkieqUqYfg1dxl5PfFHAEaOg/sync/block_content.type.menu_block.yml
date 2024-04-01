@@ -1,0 +1,8 @@
+uuid: 5fc0b55d-78c1-4786-88e1-5ee63296b875
+langcode: en
+status: true
+dependencies: {  }
+id: menu_block
+label: 'Menu BLock'
+revision: 0
+description: ''
