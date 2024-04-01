@@ -19,7 +19,7 @@
 /web/sites/*/files/.htaccess
 
 # Ignore defaulte settings
-/web/sites/default/*
+/web/sites/default/settings.php
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
