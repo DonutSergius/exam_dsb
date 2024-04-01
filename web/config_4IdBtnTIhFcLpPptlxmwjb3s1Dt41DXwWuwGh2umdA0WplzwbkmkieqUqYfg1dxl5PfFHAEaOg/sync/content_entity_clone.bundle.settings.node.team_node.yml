@@ -1,0 +1,15 @@
+enabled: true
+local_task_label: ''
+fields:
+  title:
+    id: entity_label_clone_suffix
+  body:
+    id: copy_values
+  field_name:
+    id: copy_values
+  field_position:
+    id: copy_values
+  field_social_links:
+    id: copy_values
+  field_team_image:
+    id: copy_values

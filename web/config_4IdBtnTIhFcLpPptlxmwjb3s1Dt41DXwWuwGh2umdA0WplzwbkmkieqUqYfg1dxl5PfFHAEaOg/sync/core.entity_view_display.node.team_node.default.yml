@@ -1,0 +1,192 @@
+uuid: 799d46b7-8f56-4c42-bd1d-b56dc0055c85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.team_node.body
+    - field.field.node.team_node.field_name
+    - field.field.node.team_node.field_position
+    - field.field.node.team_node.field_social_links
+    - field.field.node.team_node.field_team_image
+    - node.type.team_node
+  module:
+    - layout_builder
+    - layout_discovery
+    - social_media_links_field
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          52bf7b01-04bc-4510-ab4e-9859571752eb:
+            uuid: 52bf7b01-04bc-4510-ab4e-9859571752eb
+            region: content
+            configuration:
+              id: 'field_block:node:team_node:field_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          5320ebfd-86db-4125-8c8e-598d22d4edb6:
+            uuid: 5320ebfd-86db-4125-8c8e-598d22d4edb6
+            region: content
+            configuration:
+              id: 'field_block:node:team_node:field_position'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          9413ef71-01b7-4443-a0c9-ca29ae3b1586:
+            uuid: 9413ef71-01b7-4443-a0c9-ca29ae3b1586
+            region: content
+            configuration:
+              id: 'field_block:node:team_node:field_social_links'
+              label: Social_links
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: social_media_links_field_default
+                label: hidden
+                settings:
+                  appearance:
+                    orientation: h
+                    show_name: 0
+                  link_attributes:
+                    target: _blank
+                    rel: '<none>'
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          561a99c1-ec05-4346-9b1c-378a0165cf9d:
+            uuid: 561a99c1-ec05-4346-9b1c-378a0165cf9d
+            region: content
+            configuration:
+              id: 'field_block:node:team_node:field_team_image'
+              label: 'Team Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: projects_image
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          f65574f4-4d88-48ed-959e-16608c4fbdad:
+            uuid: f65574f4-4d88-48ed-959e-16608c4fbdad
+            region: content
+            configuration:
+              id: 'field_block:node:team_node:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          1e0c0048-efa6-4b40-bc14-7f9e6de810e5:
+            uuid: 1e0c0048-efa6-4b40-bc14-7f9e6de810e5
+            region: content
+            configuration:
+              id: 'extra_field_block:node:team_node:rate_testlike'
+              label: 'Rate Like'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+        third_party_settings: {  }
+id: node.team_node.default
+targetEntityType: node
+bundle: team_node
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_face_images:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_name:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_position:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_social_links:
+    type: social_media_links_field_default
+    label: above
+    settings:
+      appearance: {  }
+      link_attributes: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  rate_testlike:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_team_image: true
+  likes: true
+  links: true
+  rate_five: true
+  rate_five_stars: true
+  rate_like: true
+  rate_yes_or_no: true
+  search_api_excerpt: true

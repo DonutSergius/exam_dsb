@@ -18,8 +18,8 @@
 /web/sites/*/files/styles
 /web/sites/*/files/.htaccess
 
-# Ignore settings.php
-/web/sites/default/settings.php
+# Ignore defaulte settings
+/web/sites/default/*
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest

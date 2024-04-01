@@ -1,0 +1,30 @@
+uuid: 7244cf3b-4df8-48d5-b8a5-05c10714f18c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:title_block:737a83e3-1e96-4e2c-a24e-26f752b7ca8e'
+  module:
+    - block_content
+    - system
+  theme:
+    - exam_theme
+id: exam_theme_baner
+theme: exam_theme
+region: header
+weight: -6
+provider: null
+plugin: 'block_content:737a83e3-1e96-4e2c-a24e-26f752b7ca8e'
+settings:
+  id: 'block_content:737a83e3-1e96-4e2c-a24e-26f752b7ca8e'
+  label: Baner
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

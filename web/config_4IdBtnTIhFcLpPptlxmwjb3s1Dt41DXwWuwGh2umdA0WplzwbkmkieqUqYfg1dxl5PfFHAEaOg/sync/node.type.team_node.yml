@@ -1,0 +1,18 @@
+uuid: 9a09d0fb-6097-43be-9dc3-5ae6b73ef7f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Team
+type: team_node
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

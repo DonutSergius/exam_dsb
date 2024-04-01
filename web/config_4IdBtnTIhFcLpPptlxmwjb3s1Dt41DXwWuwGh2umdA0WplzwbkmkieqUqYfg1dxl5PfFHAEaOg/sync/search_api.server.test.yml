@@ -1,0 +1,15 @@
+uuid: 8c9d32a1-784a-4a48-8498-189a27de3d00
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: test
+name: Test
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words
+  phrase: disabled

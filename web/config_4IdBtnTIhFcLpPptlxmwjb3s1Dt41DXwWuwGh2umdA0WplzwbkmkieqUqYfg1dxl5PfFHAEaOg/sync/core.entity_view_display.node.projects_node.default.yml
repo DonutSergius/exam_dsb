@@ -1,0 +1,157 @@
+uuid: 66f78167-5c01-48c5-bddf-2acf5fcbdba6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.projects_node.body
+    - field.field.node.projects_node.field_contents
+    - field.field.node.projects_node.field_images
+    - field.field.node.projects_node.field_service_term
+    - node.type.projects_node
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          cffded4c-4874-4fb0-8623-11ac1544c7cb:
+            uuid: cffded4c-4874-4fb0-8623-11ac1544c7cb
+            region: content
+            configuration:
+              id: 'field_block:node:projects_node:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          c91e0c56-d542-48ca-b556-36c9b27eaa13:
+            uuid: c91e0c56-d542-48ca-b556-36c9b27eaa13
+            region: content
+            configuration:
+              id: 'field_block:node:projects_node:field_contents'
+              label: Contents
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          83d54d24-c593-4acc-aa99-e651b78d7c1d:
+            uuid: 83d54d24-c593-4acc-aa99-e651b78d7c1d
+            region: content
+            configuration:
+              id: 'field_block:node:projects_node:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          7842bb95-5e66-4d76-99c5-051d0d62dbae:
+            uuid: 7842bb95-5e66-4d76-99c5-051d0d62dbae
+            region: content
+            configuration:
+              id: 'field_block:node:projects_node:field_images'
+              label: Images
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: media_library
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          2fb6d5b0-53b1-4c2c-a799-afd892a752ca:
+            uuid: 2fb6d5b0-53b1-4c2c-a799-afd892a752ca
+            region: content
+            configuration:
+              id: 'field_block:node:projects_node:field_service_term'
+              label: 'Service Term'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+        third_party_settings: {  }
+id: node.projects_node.default
+targetEntityType: node
+bundle: projects_node
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_contents:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_images:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_service_term: true
+  links: true

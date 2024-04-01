@@ -36,6 +36,10 @@
             @include centerElem;
             letter-spacing: -0.5px;
           }
+          &-view-node{
+            position: relative;
+            width: max-content;
+          }
         }
       }
     }

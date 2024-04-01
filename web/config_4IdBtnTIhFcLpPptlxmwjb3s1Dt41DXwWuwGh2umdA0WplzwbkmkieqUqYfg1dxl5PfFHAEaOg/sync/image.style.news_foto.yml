@@ -1,0 +1,15 @@
+uuid: 71ab30d0-1177-4083-902b-6c149913b7ca
+langcode: en
+status: true
+dependencies: {  }
+name: news_foto
+label: 'news foto'
+effects:
+  ed201dc4-a23b-4674-8533-5ac61dc41498:
+    uuid: ed201dc4-a23b-4674-8533-5ac61dc41498
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 77
+      height: 77
+      anchor: center-center
