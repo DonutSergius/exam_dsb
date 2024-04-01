@@ -6,6 +6,7 @@
   margin: 0 auto;
   width: $desktop;
 }
+
 // social link style
 .social-media-links--platforms {
   li {
@@ -22,29 +23,40 @@
     }
   }
 }
+
 // link to content button style
-.views-field {
-  &-view-node {
-    @include centerElem;
-    font-size: 14px;
+.views-row {
+  position: relative;
+  padding-bottom: 43px;
+  .views-field {
+    &-view-node {
+      @include centerElem;
+      font-size: 14px;
+      position: absolute; // Задаємо абсолютне позиціонування для кнопки
+      bottom: 0; // Закріплюємо кнопку знизу контейнера
+      left: 0; // Розміщуємо кнопку вліво від контейнера
+      width: 100%;
+      .field-content {
+        margin: 0 auto;
+        background-color: $titleColor;
+        padding: 8px 10px;
 
-    .field-content {
-      margin: 0 auto;
-      background-color: $titleColor;
-      padding: 8px 10px;
+        a {
+          color: white;
+        }
 
-      a {
-        color: white;
-      }
-      &:hover{
-        background-color: $color_drupal;
+        &:hover {
+          background-color: $color_drupal;
+        }
       }
     }
   }
 }
+
 // pager style
 .pager {
   margin: 50px 0;
+
   ul {
     li {
       font-size: 14px;
@@ -70,8 +82,8 @@
 }
 
 // taxonomy term page
-.view-taxonomy-term{
-  .view-header{
+.view-taxonomy-term {
+  .view-header {
     @include textFormat(28px, bold, $footerColor);
     text-transform: uppercase;
     position: relative;
@@ -93,7 +105,8 @@
       bottom: 0;
     }
   }
-  .view-content{
+
+  .view-content {
     margin-bottom: 75px;
   }
 }
@@ -136,8 +149,8 @@
     }
   }
 
-  .view-taxonomy-term{
-    .view-header{
+  .view-taxonomy-term {
+    .view-header {
       @include textFormat(24px, bold, $footerColor);
     }
   }
@@ -178,8 +191,8 @@
     }
   }
 
-  .view-taxonomy-term{
-    .view-header{
+  .view-taxonomy-term {
+    .view-header {
       @include textFormat(24px, bold, $footerColor);
     }
   }
@@ -219,8 +232,8 @@
       }
     }
   }
-  .view-taxonomy-term{
-    .view-header{
+  .view-taxonomy-term {
+    .view-header {
       @include textFormat(20px, bold, $footerColor);
     }
   }

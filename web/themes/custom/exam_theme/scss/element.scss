@@ -98,3 +98,14 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.grid-view-4-col {
+  .view-content {
+    .field--name-title {
+      text-align: center;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

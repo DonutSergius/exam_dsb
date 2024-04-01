@@ -20,6 +20,8 @@
         max-width: 25%;
         background-color: $white;
         text-transform: uppercase;
+        position: relative;
+        margin-bottom: 20px;
 
         &:first-child {
           margin-left: 0;
@@ -59,25 +61,36 @@
             margin-bottom: 20px;
           }
         }
-
-        .node__links {
-          width: max-content;
-          margin: 0 auto;
-          background-color: $footerColor;
-          padding: 8px 10px;
-          &:hover{
-            background-color: black;
-          }
-          a {
-            @include textFormat(0, 400, white);
-            font-size: 0;
-            color: white;
-            &:before {
-              content: "Look at me";
-              font-size: 16px;
+        article{
+          height: calc(100% + 43px);
+        }
+        .node__content{
+          height: 100%;
+        }
+        .block-extra-field-blocknodeteam-nodelinks{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          .node__links {
+            width: max-content;
+            margin: 0 auto;
+            background-color: $footerColor;
+            padding: 8px 10px;
+            &:hover{
+              background-color: black;
             }
-          }
+            a {
+              @include textFormat(0, 400, white);
+              font-size: 0;
+              color: white;
+              &:before {
+                content: "Look at me";
+                font-size: 16px;
+              }
+            }
 
+          }
         }
 
 

@@ -91,7 +91,7 @@
           display: flex;
           flex-wrap: wrap;
           text-transform: uppercase;
-          padding: 20px 20px 20px 10px;
+          padding: 20px 20px 43px 10px;
 
           .views-field {
             height: max-content;
@@ -173,9 +173,9 @@
             &-view-node {
               padding-left: 20px;
               border-left: 1px solid $gray;
-              width: 100%;
+              width: calc(100% - 85px);
               padding-top: 10px;
-              margin-left: 75px;
+              margin-left: 85px;
 
               .field-content {
                 margin-left: auto;
